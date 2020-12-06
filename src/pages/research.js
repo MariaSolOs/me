@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
-const ResearchPage = (props) => {
+const ResearchPage = () => {
     return (
         <Layout>
             <h1>Research page</h1>

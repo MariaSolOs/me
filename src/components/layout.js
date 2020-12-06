@@ -5,8 +5,8 @@ import {Link} from 'gatsby';
 import {FaGithub, FaLinkedinIn, FaRegEnvelope} from 'react-icons/fa';
 
 const Container = styled.div`
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     margin: 0;
     background-color: #F6F6F6;
     font-family: 'Roboto Slab', serif;
@@ -14,11 +14,14 @@ const Container = styled.div`
 
 const FixedBar = styled.div`
     width: 100%;
+    height: 10vh;
+    position: fixed;
     box-sizing: border-box;
     background-color: #E6E2F0;
 `
 
 const Header = styled(FixedBar)`
+    top: 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -46,6 +49,7 @@ const NavLink = styled(Link)`
 const Footer = styled(FixedBar)`
     text-align: center;
     padding: 1rem 10%;
+    bottom: 0;
 
     .footer-icon {
         font-size: 2rem;
