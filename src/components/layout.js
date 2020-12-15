@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import 'normalize.css';
 
 import {Link} from 'gatsby';
 import {FaGithub, FaLinkedinIn, FaRegEnvelope} from 'react-icons/fa';
@@ -8,16 +9,18 @@ const Container = styled.div`
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
-    background-color: #F6F6F6;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
 `
 
 const FixedBar = styled.div`
     width: 100%;
+    margin: auto;
     height: 10vh;
     position: fixed;
+    right: 0; left: 0;
     box-sizing: border-box;
-    background-color: #E6E2F0;
+    background-color: #E0BFB8;
+    z-index: 5;
 `
 
 const Header = styled(FixedBar)`
@@ -36,13 +39,15 @@ const NavBar = styled.ul`
 const NavLink = styled(Link)`
     text-decoration: none;
     margin: 0 0 0 2rem;
-    color: #524670;
+    color: #000;
     font-weight: 700;
     font-size: 1.2rem;
 
     &.header-name {
         margin: 0;
         font-size: 2rem;
+        color: #E0115F;
+        text-transform: uppercase;
     }
 `
 
@@ -53,7 +58,7 @@ const Footer = styled(FixedBar)`
 
     .footer-icon {
         font-size: 2rem;
-        color: #524670;
+        color: #000;
         margin: 0 10px;
     }
 `

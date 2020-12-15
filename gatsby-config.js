@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: "/me",
     plugins: [
         {
             resolve: `gatsby-plugin-styled-components`
@@ -6,9 +7,17 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
-                fonts: ['Roboto Slab'],
+                fonts: ['Fugaz One', 'Montserrat'],
                 display: 'swap'
             }
-        }
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/`,
+            },
+        },
     ]
 }

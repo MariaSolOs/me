@@ -1,28 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Typing from 'react-typing-animation';
 import Layout from '../components/layout';
 
 const Title = styled.div`
-    width: 80%;
-    min-width: 300px;
-    margin: auto;
-    padding-top: 20vh;
+    width: 100%;
+    height: 100vh;
+    padding: 200px 20% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0;
+    box-sizing: border-box;
     font-size: 3.5rem;
-    height: 70vh;
+    font-family: 'Fugaz One', cursive;
+    background: linear-gradient(to right, #E0115F 50%, #FFF 50%);
+`
+
+const Subtitle = styled.h4`
+    font-size: 2.5rem;
 `
 
 const IndexPage = () => {
     return (
         <Layout>
-            <Typing speed={100}>
-                <Title>
-                    I'm Maria.
-                    I love coding, math, intellectual challenges,  
-                    <Typing.Delay ms={1000}/> and wine.
-                </Title>
-            </Typing>
+            <Title>
+                Hi, I'm Maria.<br/>
+                <Subtitle>
+                    Undergrad at McGill, SWE intern at Microsoft, 
+                    and nerd without shame.
+                </Subtitle>
+            </Title>
         </Layout>
     );
 }
