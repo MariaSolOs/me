@@ -7,7 +7,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
-                fonts: ['Fugaz One', 'Montserrat'],
+                fonts: ['Fugaz One', 'Montserrat', 'Rubik'],
                 display: 'swap'
             }
         },
@@ -19,5 +19,6 @@ module.exports = {
                 path: `${__dirname}/src/`,
             },
         },
+        `gatsby-plugin-transition-link`
     ]
 }

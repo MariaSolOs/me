@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import 'normalize.css';
 
-import {Link} from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import {FaGithub, FaLinkedinIn, FaRegEnvelope} from 'react-icons/fa';
 
 const Container = styled.div`
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
 `
 
 const FixedBar = styled.div`
@@ -37,7 +37,7 @@ const NavBar = styled.ul`
     padding: 0;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled(AniLink)`
     text-decoration: none;
     margin: 0 0 0 2rem;
     color: #000;
@@ -51,7 +51,7 @@ const NavLink = styled(Link)`
         text-transform: uppercase;
 
         @media(max-width: 768px) {
-            font-size: 1.4rem;
+            display: none;
         }
     }
 `
@@ -78,10 +78,15 @@ const Layout = ({children}) => {
     return (
         <Container>
             <Header>
-                <NavLink to="/" className="header-name">Maria Solano.</NavLink>
+                <NavLink 
+                to="/" 
+                className="header-name" 
+                paintDrip
+                hex="#FFF">Maria Solano.</NavLink>
                 <NavBar>
-                    <NavLink to="/projects/">Projects</NavLink>
-                    <NavLink to="/research/">Research</NavLink>
+                    <NavLink to="/projects/" cover bg="#FFF">Projects</NavLink>
+                    <NavLink to="/research/" cover bg="#FFF">Research</NavLink>
+                    <NavLink to="/about/" cover bg="#FFF">About me</NavLink>
                 </NavBar>
             </Header>
             {children}

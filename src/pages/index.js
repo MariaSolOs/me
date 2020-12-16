@@ -35,7 +35,7 @@ const IndexPage = () => {
             <Title>
                 Hi, I'm Maria.<br/>
                 <Subtitle>
-                    Undergrad at McGill, SWE intern at Microsoft, 
+                    Undergrad at McGill, incoming SWE intern at Microsoft, 
                     and nerd without shame.
                 </Subtitle>
             </Title>

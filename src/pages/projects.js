@@ -4,25 +4,11 @@ import {graphql} from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
-
-const Gallery = styled.div`
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    align-items: center;
-
-    @media(max-width: 768px) {
-        flex-direction: column;
-        overflow-y: scroll;
-        height: 80vh;
-    }
-`
+import Gallery from '../components/gallery';
 
 const GalleryCard = styled.div`
     width: 35%;
     margin: 0 7.5%;
-    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +16,7 @@ const GalleryCard = styled.div`
     .project-image {
         transition: 300ms;
         &:hover { 
-            transform: scale(1.1); 
+            transform: scale(1.05); 
         }
     }
 
@@ -90,7 +76,6 @@ const ProjectsPage = ({data}) => {
     );
 }
 
-//Images
 export const query = graphql`
     query {
         borel: file(relativePath: { eq: "images/borel.png" }) {
