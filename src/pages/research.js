@@ -46,8 +46,7 @@ const ResearchPage = ({data}) => {
                     <Img 
                     fixed={data.fields.childImageSharp.fixed}
                     alt="FUSRP group"
-                    className="picture"
-                    loading="eager"/>
+                    className="picture"/>
                     <Caption>
                         I was part of the
                         <a 

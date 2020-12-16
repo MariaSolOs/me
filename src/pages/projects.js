@@ -46,8 +46,7 @@ const ProjectsPage = ({data}) => {
                     <Img 
                     fixed={data.borel.childImageSharp.fixed}
                     alt="Borel logo"
-                    className="project-image"
-                    loading="eager"/>
+                    className="project-image"/>
                     <Caption>
                         <a href="https://borel.herokuapp.com/" 
                         target="_blank" 
@@ -61,8 +60,7 @@ const ProjectsPage = ({data}) => {
                     <Img 
                     fixed={data.ramble.childImageSharp.fixed}
                     alt="Ramble"
-                    className="project-image"
-                    loading="eager"/>
+                    className="project-image"/>
                     <Caption>
                         <a href="https://www.experienceramble.com/" 
                         target="_blank" 
