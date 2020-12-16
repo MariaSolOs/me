@@ -46,7 +46,8 @@ const ProjectsPage = ({data}) => {
                     <Img 
                     fixed={data.borel.childImageSharp.fixed}
                     alt="Borel logo"
-                    className="project-image"/>
+                    className="project-image"
+                    loading="eager"/>
                     <Caption>
                         <a href="https://borel.herokuapp.com/" 
                         target="_blank" 
@@ -60,7 +61,8 @@ const ProjectsPage = ({data}) => {
                     <Img 
                     fixed={data.ramble.childImageSharp.fixed}
                     alt="Ramble"
-                    className="project-image"/>
+                    className="project-image"
+                    loading="eager"/>
                     <Caption>
                         <a href="https://www.experienceramble.com/" 
                         target="_blank" 
@@ -85,7 +87,7 @@ export const query = graphql`
                 }
             }
         }
-        
+
         ramble: file(relativePath: { eq: "images/ramble.png" }) {
             childImageSharp {
                 fixed( width: 350 ) {
