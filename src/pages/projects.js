@@ -85,7 +85,7 @@ export const query = graphql`
                 }
             }
         }
-
+        
         ramble: file(relativePath: { eq: "images/ramble.png" }) {
             childImageSharp {
                 fixed( width: 350 ) {
