@@ -17,7 +17,8 @@ const FixedBar = styled.div`
     margin: auto;
     height: 10vh;
     position: fixed;
-    right: 0; left: 0;
+    right: 0; 
+    left: 0;
     box-sizing: border-box;
     background-color: #E0BFB8;
     z-index: 5;
@@ -48,6 +49,10 @@ const NavLink = styled(Link)`
         font-size: 2rem;
         color: #E0115F;
         text-transform: uppercase;
+
+        @media(max-width: 768px) {
+            font-size: 1.4rem;
+        }
     }
 `
 

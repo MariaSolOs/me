@@ -11,23 +11,45 @@ const Gallery = styled.div`
     height: 100vh;
     box-sizing: border-box;
     align-items: center;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 80vh;
+    }
 `
 
 const GalleryCard = styled.div`
-    width: 40%;
-    margin: 0 5%;
-    min-width: 150px;
+    width: 35%;
+    margin: 0 7.5%;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .project-image {
+        transition: 300ms;
+        &:hover { 
+            transform: scale(1.1); 
+        }
+    }
+
+    @media(max-width: 768px) {
+        width: 90%;
+        margin: 15vh auto 0;
+    }
 `
 
 const Caption = styled.p`
-    margin: 0;
+    margin: 20px 0 0;
     color: #000;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
+
+    a {
+        color: #E0115F;
+        text-decoration: none;
+    }
 `
 
 const ProjectsPage = ({data}) => {
@@ -36,12 +58,31 @@ const ProjectsPage = ({data}) => {
             <Gallery>
                 <GalleryCard>
                     <Img 
-                    fixed={data.file.childImageSharp.fixed}
-                    alt="Borel logo"/>
+                    fixed={data.borel.childImageSharp.fixed}
+                    alt="Borel logo"
+                    className="project-image"/>
                     <Caption>
-                        Borel is a small application for university note-takers.
+                        <a href="https://borel.herokuapp.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer">Borel</a> is a small application 
+                        for university note-takers.
                         Although it is still in its early stages, I want Borel to 
                         become a lecture notes marketplace.
+                    </Caption>
+                </GalleryCard>
+                <GalleryCard>
+                    <Img 
+                    fixed={data.ramble.childImageSharp.fixed}
+                    alt="Ramble"
+                    className="project-image"/>
+                    <Caption>
+                        <a href="https://www.experienceramble.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer">Ramble</a> allows anyone to 
+                        create and attend a wide range of unique experiences.
+                        I built Ramble using a MERN stack, Stripe for payment
+                        managament, Socket.IO for messaging and live updates, among other 
+                        features.
                     </Caption>
                 </GalleryCard>
             </Gallery>
@@ -52,7 +93,15 @@ const ProjectsPage = ({data}) => {
 //Images
 export const query = graphql`
     query {
-        file(relativePath: { eq: "images/borel.png" }) {
+        borel: file(relativePath: { eq: "images/borel.png" }) {
+            childImageSharp {
+                fixed( width: 350 ) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+
+        ramble: file(relativePath: { eq: "images/ramble.png" }) {
             childImageSharp {
                 fixed( width: 350 ) {
                     ...GatsbyImageSharpFixed

@@ -15,10 +15,18 @@ const Title = styled.div`
     font-size: 3.5rem;
     font-family: 'Fugaz One', cursive;
     background: linear-gradient(to right, #E0115F 50%, #FFF 50%);
+
+    @media(max-width: 768px) {
+        font-size: 2.5rem;
+    }
 `
 
 const Subtitle = styled.h4`
     font-size: 2.5rem;
+
+    @media(max-width: 768px) {
+        font-size: 1.8rem;
+    }
 `
 
 const IndexPage = () => {
