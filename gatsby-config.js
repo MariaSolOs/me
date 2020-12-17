@@ -7,7 +7,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
-                fonts: ['Fugaz One', 'Montserrat', 'Rubik'],
+                fonts: ['Fugaz One'],
                 display: 'swap'
             }
         },

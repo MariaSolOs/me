@@ -14,7 +14,7 @@ const Title = styled.div`
     box-sizing: border-box;
     font-size: 3.5rem;
     font-family: 'Fugaz One', cursive;
-    background: linear-gradient(to right, #E0115F 50%, #FFF 50%);
+    background: linear-gradient(to right, #D8BFD8 50%, #F5F5F5 50%);
 
     @media(max-width: 768px) {
         font-size: 2.5rem;

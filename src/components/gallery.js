@@ -15,8 +15,9 @@ const Wrapper = styled.div`
     }
 `
 
-const Gallery = ({children}) => <Wrapper>
-                                    {children}
-                                </Wrapper>
+const Gallery = ({children}) => 
+    <Wrapper>
+        {children}
+    </Wrapper>
 
 export default Gallery;
