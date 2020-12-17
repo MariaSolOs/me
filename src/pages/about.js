@@ -16,7 +16,7 @@ const Text = styled.div`
     }
 
     a {
-        color: #E0115F;
+        color: #8B008B;
         text-decoration: none;
     }
 `
