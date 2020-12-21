@@ -12,7 +12,8 @@ const Text = styled.div`
     text-align: center;
 
     @media(max-width: 768px) {
-        font-size: 1.3rem;
+        padding-top: 20vh;
+        font-size: 1rem;
     }
 
     a {

@@ -10,6 +10,10 @@ const Bar = styled(FixedBar)`
     align-items: flex-end;
     justify-content: space-between;
     padding: 1rem 10% 1rem 5%;
+
+    @media(max-width: 768px) {
+        padding: 1rem 5vw;
+    }
 `
 
 const NavBar = styled.ul`
@@ -24,6 +28,11 @@ const NavLink = styled(AniLink)`
     font-weight: 700;
     font-size: 1.2rem;
 
+    @media(max-width: 768px) {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+
     &.header-name {
         margin: 0;
         font-size: 2rem;
@@ -31,7 +40,7 @@ const NavLink = styled(AniLink)`
         text-transform: uppercase;
 
         @media(max-width: 768px) {
-            display: none;
+            span { display: none; }
         }
     }
 `
@@ -52,7 +61,7 @@ const Header = () => {
             className="header-name" 
             paintDrip
             hex="#FFF">
-                Maria Solano.
+                M<span>aria</span> S<span>olano</span>.
             </NavLink>
             <NavBar>
                 {pages.map(({title, link}) => 

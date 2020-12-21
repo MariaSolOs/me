@@ -32,6 +32,10 @@ const Caption = styled.p`
     font-size: 1.2rem;
     text-align: center;
 
+    @media(max-width: 768px) {
+        font-size: 0.9rem;
+    }
+
     a {
         color: #8B008B;
         text-decoration: none;

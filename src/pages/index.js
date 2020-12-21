@@ -18,6 +18,7 @@ const Title = styled.div`
 
     @media(max-width: 768px) {
         font-size: 2.5rem;
+        padding: 20vh 5vw 0;
     }
 `
 
