@@ -28,10 +28,13 @@ const AboutPage = () => {
             <Text>
                 I am an undergradute student of mathematics and computer science at McGill 
                 University, as well as a teaching assistant for COMP202 (Foundations of 
-                Programming). I am always in the search for new challenges and learning new 
-                things. Oh, and I have a cat, her name is Ophelia. <br/><br/>
-                Here is my <a href={cv} target="_blank" rel="noopener noreferrer">
-                CV</a>.
+                Programming). As long as I'm coding, I'll be happy (from the scary 
+                pointer nightmares in C to setting up a fancy CSS animation). 
+                <br/>
+                Oh, and I have a cat, her name is Ophelia. 
+                <br/><br/>
+
+                Here is my <a href={cv} target="_blank" rel="noopener noreferrer">CV</a>.
             </Text>
         </Layout>
     );

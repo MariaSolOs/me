@@ -13,7 +13,7 @@ const Bar = styled.div`
     z-index: 5;
 `
 
-const FixedBar = ({className, children}) => 
+const FixedBar = ({ className, children }) => 
     <Bar className={className}>
         {children}
     </Bar>

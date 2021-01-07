@@ -7,6 +7,7 @@ const Wrapper = styled.div`
     height: 100vh;
     box-sizing: border-box;
     align-items: center;
+    overflow-x: scroll;
 
     @media(max-width: 768px) {
         flex-direction: column;
@@ -15,7 +16,7 @@ const Wrapper = styled.div`
     }
 `
 
-const Gallery = ({children}) => 
+const Gallery = ({ children }) => 
     <Wrapper>
         {children}
     </Wrapper>

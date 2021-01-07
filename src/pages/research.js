@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
@@ -42,7 +42,7 @@ const Caption = styled.p`
     }
 `
 
-const ResearchPage = ({data}) => {
+const ResearchPage = ({ data }) => {
     return (
         <Layout>
             <Gallery>
@@ -68,7 +68,7 @@ const ResearchPage = ({data}) => {
                         target="_blank" 
                         rel="noopener noreferrer"> Prakash Panangaden </a>and 
                         explored bisimulation metrics for reinforcement 
-                        learning. He continues being my research mentor.
+                        learning. 
                     </Caption>
                 </GalleryCard>
             </Gallery>

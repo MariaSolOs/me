@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FixedBar from './fixedBar';
-import {FaGithub, FaLinkedinIn, FaRegEnvelope} from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa';
 
 const CONTACT_INFO = {
     EMAIL: 'majosolano99@gmail.com',
