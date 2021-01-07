@@ -22,7 +22,7 @@ const GalleryCard = styled.div`
 
     @media(max-width: 768px) {
         width: 90%;
-        margin: 15vh auto 0;
+        margin: 10vh auto 0;
     }
 `
 

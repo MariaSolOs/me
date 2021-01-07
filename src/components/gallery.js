@@ -10,8 +10,6 @@ const Wrapper = styled.div`
     overflow-x: scroll;
 
     @media(max-width: 768px) {
-        flex-direction: column;
-        overflow-y: scroll;
         height: 80vh;
     }
 `

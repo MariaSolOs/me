@@ -14,6 +14,7 @@ const GalleryCard = styled.div`
     align-items: center;
 
     .project-image {
+        object-fit: contain;
         transition: 300ms;
         &:hover { 
             transform: scale(1.05); 
@@ -22,7 +23,7 @@ const GalleryCard = styled.div`
 
     @media(max-width: 768px) {
         width: 90%;
-        margin: 15vh auto 0;
+        margin: 10vh 5% 0;
     }
 `
 
