@@ -64,8 +64,12 @@ const Header = () => {
                 M<span>aria</span> S<span>olano</span>.
             </NavLink>
             <NavBar>
-                {pages.map(({title, link}) => 
-                    <NavLink to={link} cover bg={TRANSITION_COLOR}>
+                {pages.map(({ title, link }, i) => 
+                    <NavLink 
+                    key={i}
+                    to={link} 
+                    cover 
+                    bg={TRANSITION_COLOR}>
                         {title}
                     </NavLink>
                 )}
