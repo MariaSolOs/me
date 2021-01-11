@@ -33,6 +33,11 @@ const Caption = styled.p`
     font-size: 1.1rem;
     text-align: center;
 
+    &.scroll-message {
+        color: #D8BFD8;
+        font-weight: bold;
+    }
+
     @media(max-width: 768px) {
         font-size: 0.9rem;
     }
@@ -47,6 +52,11 @@ const ProjectsPage = ({ data }) => {
     return (
         <Layout>
             <Gallery>
+                <GalleryCard>
+                    <Caption className="scroll-message">
+                        Scroll left and right to see it all!
+                    </Caption>
+                </GalleryCard>
                 <GalleryCard>
                     <Img 
                     fixed={data.borel.childImageSharp.fixed}
@@ -99,6 +109,20 @@ const ProjectsPage = ({ data }) => {
                         in Zoom waiting rooms.
                     </Caption>
                 </GalleryCard>
+                <GalleryCard>
+                    <Img 
+                    fixed={data.hilbert.childImageSharp.fixed}
+                    alt="Hilbert space game"
+                    className="project-image"/>
+                    <Caption>
+                        I'm an amateur game developer. My first game was
+                        <a 
+                        href="https://sharemygame.com/@MariaSolOs/hilbert-space?fbclid=IwAR2Gef9ftxYe6PrWNHtGzr1gYAlrcx66-7OOcRjSZYSDp0nDn_EXZoM26K0" 
+                        target="_blank" 
+                        rel="noopener noreferrer"> Hilbert Space</a>, a real analysis
+                        pun that went too far.
+                    </Caption>
+                </GalleryCard>
             </Gallery>
         </Layout>
     );
@@ -123,6 +147,14 @@ export const query = graphql`
         }
 
         ohba: file(relativePath: { eq: "images/OHBA.png" }) {
+            childImageSharp {
+                fixed( width: 300 ) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+
+        hilbert: file(relativePath: { eq: "images/hilbert.png" }) {
             childImageSharp {
                 fixed( width: 300 ) {
                     ...GatsbyImageSharpFixed
