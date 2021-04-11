@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import 'normalize.css';
 
+import SEO from './SEO';
 import Footer from './footer';
 import Header from './header';
 
@@ -12,11 +13,12 @@ const Container = styled.div`
     font-family: 'Courier', sans-serif;
 `
 
-const Layout = ({children}) => 
+const Layout = ({ children }) => 
     <Container>
-        <Header/>
+        <SEO />
+        <Header />
         {children}
-        <Footer/>
-    </Container>
+        <Footer />
+    </Container>;
 
 export default Layout;

@@ -1,6 +1,7 @@
 module.exports = {
     pathPrefix: "/me",
     plugins: [
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-styled-components`
         },
@@ -20,5 +21,10 @@ module.exports = {
             },
         },
         `gatsby-plugin-transition-link`
-    ]
+    ],
+    siteMetadata: {
+        title: "Maria Solano",
+        description: "Maria Solano - Nerd without shame",
+        url: "https://mariasolos.github.io/me", // No trailing slash allowed!
+    }
 }

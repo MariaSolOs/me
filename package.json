@@ -20,6 +20,7 @@
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-sharp": "^2.11.0",
     "gatsby-plugin-styled-components": "^3.6.0",
     "gatsby-plugin-transition-link": "^1.20.5",
@@ -30,6 +31,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
     "styled-components": "^5.2.1"
   }
