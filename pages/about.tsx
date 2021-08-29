@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { BREAKPOINTS } from 'global-constants';
 
+import PageHead from 'components/PageHead';
 import Link from 'components/Link';
 import cv from 'public/CV.pdf';
 
@@ -29,6 +30,9 @@ const RAMBLE_URL = 'https://www.experienceramble.com/';
 
 const AboutPage = () => (
     <Container>
+        <PageHead
+        title="About me"
+        description="I am an undergradute student of mathematics and computer science at McGill University, a teaching assistant, co-founder of Ramble, and a huge nerd." />
         <Text>
             I am an undergradute student of mathematics and computer science at{' '}
             <Link href={MCGILL_URL} target="_blank" rel="noopener noreferrer">

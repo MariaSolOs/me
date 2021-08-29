@@ -35,7 +35,7 @@ export default class CustomDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta name="author" content="Maria Solano" />
                     <meta property="og:type" content="website" />
-                    {/* TODO: Add canonical url */}
+                    <link rel="canonical" href={process.env.SITE_URL} />
 
                     {/* TODO: Add PWA stuff */}
 

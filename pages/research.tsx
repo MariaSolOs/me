@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { BREAKPOINTS } from 'global-constants';
 
 import Image from 'next/image';
+import PageHead from 'components/PageHead';
 import Link from 'components/Link';
 import fieldsImg from 'public/images/fields.jpg';
 
@@ -33,6 +34,9 @@ const PRAKASH_LINK = 'https://www.cs.mcgill.ca/~prakash/';
 
 const ResearchPage = () => (
     <Container>
+        <PageHead
+        title="Research"
+        description="Participant of FUSRP 2019 and research assistant of Prakash Panangaden during summer 2020." />
         <Image
         src={fieldsImg}
         alt="Fields Institute 2019"

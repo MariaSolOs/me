@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import { BREAKPOINTS } from 'global-constants';
 
+import PageHead from 'components/PageHead';
+
 const Container = styled.div`
     width: 100%;
     height: 100%;
@@ -38,6 +40,9 @@ const Subtitle = styled.h2`
 
 const HomePage = () => (
     <Container>
+        <PageHead 
+        title="Nerd without shame"
+        description="Maria José Solano: Undergrad at McGill, incoming SWE at Microsoft, and nerd without shame." />
         <div>
             <Title>Hi, I&apos;m Maria José.</Title>
             <Subtitle>

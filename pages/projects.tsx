@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import PageHead from 'components/PageHead';
 import Link from 'components/Link';
 import ProjectCard from 'components/ProjectCard';
 import rambleImg from 'public/images/ramble.png';
@@ -17,6 +18,9 @@ const Gallery = styled.div`
 
 const ProjectsPage = () => (
     <Gallery>
+        <PageHead 
+        title="Projects"
+        description="I've coded every single line of code in Ramble, built a booking platform for helping students during the COVID pandemic, and even had a mathematical adventure with web dev." />
         <ProjectCard image={rambleImg}>
             <Link
             href="https://www.experienceramble.com/" 

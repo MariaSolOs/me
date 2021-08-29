@@ -12,6 +12,7 @@ module.exports = {
             config.plugins.push(new ForkTsCheckerWebpackPlugin());
         }
 
+        // For importing my CV
         config.module.rules.push({
             test: /\.(pdf)$/,
             type: 'asset/resource',
