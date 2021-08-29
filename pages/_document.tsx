@@ -37,7 +37,13 @@ export default class CustomDocument extends Document {
                     <meta property="og:type" content="website" />
                     <link rel="canonical" href={process.env.SITE_URL} />
 
-                    {/* TODO: Add PWA stuff */}
+                    {/* PWA stuff */}
+                    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+                    <meta name="msapplication-TileColor" content="#F2E9E4" />
+                    <meta name="theme-color" content="#F2E9E4" />
+                    <link rel="manifest" href="/manifest.json" />
 
                     {/* Main font */}
                     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
