@@ -24,12 +24,8 @@ const Card = styled.div`
     }
 
     @media(max-width: ${BREAKPOINTS.md}) {
-        width: 45vw;
-        margin: 0 2.5vw;
-    }
-
-    @media(max-width: ${BREAKPOINTS.sm}) {
         width: 90vw;
+        max-width: 450px;
         margin: 0 5vw;
     }
 `;
