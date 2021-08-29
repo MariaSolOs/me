@@ -7,6 +7,7 @@ import rambleImg from 'public/images/ramble.png';
 import borelImg from 'public/images/borel.png';
 import ohbaImg from 'public/images/OHBA.png';
 import hilbertImg from 'public/images/hilbert.png';
+import pwaSimulatorImg from 'public/images/pwa-simulator.png';
 
 const Gallery = styled.div`
     display: flex;
@@ -56,6 +57,18 @@ const ProjectsPage = () => (
             target="_blank" 
             rel="noopener noreferrer">Hilbert Space</Link>, a real analysis
             pun that went too far.
+        </ProjectCard>
+        <ProjectCard image={pwaSimulatorImg}>
+            During my internship at Microsoft on summer 2021, I implemented a{' '}
+            <Link 
+            href="https://www.npmjs.com/package/@pwabuilder/pwa-simulator"
+            target="_blank" 
+            rel="noopener noreferrer">manifest previewer</Link> to help web developers
+            visualize this json file, and also delivered a{' '}
+            <Link
+            href="https://www.npmjs.com/package/@pwabuilder/pwa-simulator"
+            target="_blank" 
+            rel="noopener noreferrer">PWA simulator</Link> featuring Windows 11.
         </ProjectCard>
     </Gallery>
 );

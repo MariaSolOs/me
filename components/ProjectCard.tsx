@@ -57,7 +57,7 @@ const ProjectCard: React.FC<Props> = (props) => (
         <CardImage>
             <Image
             src={props.image}
-            alt="Ramble"
+            alt="Project"
             layout="fill"
             placeholder="blur"
             objectFit="cover" />
