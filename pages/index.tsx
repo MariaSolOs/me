@@ -40,9 +40,7 @@ const Subtitle = styled.h2`
 
 const HomePage = () => (
     <Container>
-        <PageHead 
-        title="Nerd without shame"
-        description="Maria José Solano: Undergrad at McGill, incoming SWE at Microsoft, and nerd without shame." />
+        <PageHead description="Undergrad at McGill, incoming SWE at Microsoft, and nerd without shame." />
         <div>
             <Title>Hi, I&apos;m Maria José.</Title>
             <Subtitle>

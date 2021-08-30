@@ -34,9 +34,7 @@ const PRAKASH_LINK = 'https://www.cs.mcgill.ca/~prakash/';
 
 const ResearchPage = () => (
     <Container>
-        <PageHead
-        title="Research"
-        description="Participant of FUSRP 2019 and research assistant of Prakash Panangaden during summer 2020." />
+        <PageHead description="Participant of FUSRP 2019 and research assistant of Prakash Panangaden during summer 2020." />
         <Image
         src={fieldsImg}
         alt="Fields Institute 2019"

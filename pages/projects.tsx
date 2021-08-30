@@ -19,9 +19,7 @@ const Gallery = styled.div`
 
 const ProjectsPage = () => (
     <Gallery>
-        <PageHead 
-        title="Projects"
-        description="I've coded every single line of code in Ramble, built a booking platform for helping students during the COVID pandemic, and even had a mathematical adventure with web dev." />
+        <PageHead description="I've coded every single line of code in Ramble, built a booking platform for helping students during the COVID pandemic, and even had a mathematical adventure with web dev." />
         <ProjectCard image={rambleImg}>
             <Link
             href="https://www.experienceramble.com/" 
