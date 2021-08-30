@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
 type Props = {
-    title: string;
     description: string;
     image?: StaticImageData;
 }
@@ -9,10 +8,10 @@ type Props = {
 const PageHead = (props: Props) => {
     return (
         <Head>
-            <title>{props.title}</title>
-            <meta name="og:title" property="og:title" content={props.title} />
-            <meta name="description" content={`Maria José Solano: ${props.description}`} />
-            <meta name="og:description" property="og:description" content={`Maria José Solano: ${props.description}`} />
+            <title>Maria José Solano</title>
+            <meta name="og:title" property="og:title" content="Maria José Solan" />
+            <meta name="description" content={props.description} />
+            <meta name="og:description" property="og:description" content={props.description} />
             <meta property="og:site_name" content="Maria José Solano" />
             <meta property="og:url" content={process.env.SITE_URL} />  
             {props.image && 
