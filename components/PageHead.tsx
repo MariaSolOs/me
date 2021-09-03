@@ -9,7 +9,7 @@ const PageHead = (props: Props) => {
     return (
         <Head>
             <title>Maria José Solano</title>
-            <meta name="og:title" property="og:title" content="Maria José Solan" />
+            <meta name="og:title" property="og:title" content="Maria José Solano" />
             <meta name="description" content={props.description} />
             <meta name="og:description" property="og:description" content={props.description} />
             <meta property="og:site_name" content="Maria José Solano" />

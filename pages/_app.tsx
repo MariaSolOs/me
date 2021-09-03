@@ -3,6 +3,7 @@ import { normalize } from 'styled-normalize';
 import type { AppProps } from 'next/app';
 import type { DefaultTheme } from 'styled-components';
 
+import Head from 'next/head';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
 import SiteBackground from 'components/SiteBackground';
@@ -32,6 +33,9 @@ const App = (props: AppProps) => {
 
     return (
         <ThemeProvider theme={theme}>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </Head>
             <GlobalStyle />
             <Navbar />
             <SiteBackground>
