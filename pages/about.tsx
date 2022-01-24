@@ -18,7 +18,6 @@ const Text = styled.p`
     }
 `;
 
-// TODO: Update CV
 const MCGILL_URL = 'https://www.mcgill.ca/';
 
 const AboutPage = () => (

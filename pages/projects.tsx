@@ -105,7 +105,7 @@ const ProjectsPage = () => (
             <ProjectCard image={hilbertImg}>
                 My first game was{' '}
                 <Link
-                href="https://sharemygame.com/@MariaSolOs/hilbert-space?fbclid=IwAR2Gef9ftxYe6PrWNHtGzr1gYAlrcx66-7OOcRjSZYSDp0nDn_EXZoM26K0" 
+                href="https://mariasolos.itch.io/hilbert-space" 
                 target="_blank" 
                 rel="noopener noreferrer">Hilbert Space</Link>, a real analysis
                 pun that went too far. Do you know the difference between &forall; and &exist;?
