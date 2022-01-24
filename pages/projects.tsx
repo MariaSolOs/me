@@ -5,12 +5,12 @@ import ProjectCard from 'components/ProjectCard';
 import rambleImg from 'public/images/ramble.png';
 import borelImg from 'public/images/borel.png';
 import ohbaImg from 'public/images/OHBA.png';
-// import hilbertImg from 'public/images/hilbert.png';
+import hilbertImg from 'public/images/hilbert.png';
 import pwaSimulatorImg from 'public/images/pwa-simulator.png';
 
 const Container = styled.main`
     width: 90%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
 `;
 
 const Description = styled.p`
@@ -41,6 +41,7 @@ const Gallery = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 50px;
 `;
 
 const ProjectsPage = () => (
@@ -94,16 +95,22 @@ const ProjectsPage = () => (
                 rel="noopener noreferrer">PWA simulator</Link> featuring Windows 11.
             </ProjectCard>
         </Gallery>
-        {/* <Gallery>
+        <GalleryTitle>Game Dev</GalleryTitle>
+        <Description>
+            I&apos;m an amateur game developer. What initially captivated me of{' '}
+            computer science was how much it felt like a videogame (&quot;bugs vs{' '}
+            coders&quot;). I create my games using Unity.
+        </Description>
+        <Gallery>
             <ProjectCard image={hilbertImg}>
-                I&apos;m an amateur game developer. My first game was{' '}
+                My first game was{' '}
                 <Link
                 href="https://sharemygame.com/@MariaSolOs/hilbert-space?fbclid=IwAR2Gef9ftxYe6PrWNHtGzr1gYAlrcx66-7OOcRjSZYSDp0nDn_EXZoM26K0" 
                 target="_blank" 
                 rel="noopener noreferrer">Hilbert Space</Link>, a real analysis
-                pun that went too far.
+                pun that went too far. Do you know the difference between &forall; and &exist;?
             </ProjectCard>
-        </Gallery> */}
+        </Gallery>
     </Container>
 );
 
