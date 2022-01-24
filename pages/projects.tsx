@@ -85,7 +85,7 @@ const ProjectsPage = () => (
             <ProjectCard image={pwaSimulatorImg}>
                 During my internship at Microsoft on summer 2021, I implemented a{' '}
                 <Link 
-                href="https://www.npmjs.com/package/@pwabuilder/pwa-simulator"
+                href="https://www.npmjs.com/package/@pwabuilder/manifest-previewer"
                 target="_blank" 
                 rel="noopener noreferrer">manifest previewer</Link> to help web developers
                 visualize this json file, and also delivered a{' '}
