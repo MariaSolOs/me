@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BREAKPOINTS } from 'global-constants';
-
 import Image from 'next/image';
 
 const Card = styled.div`
@@ -10,8 +8,9 @@ const Card = styled.div`
     overflow: hidden;
     background-color: #FFF;
     height: 350px;
-    width: 450px;
-    margin: 0 30px;
+    width: 45%;
+    max-width: 500px;
+    margin: 20px 2.5% 0;
     flex-shrink: 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 
                 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -23,10 +22,10 @@ const Card = styled.div`
                     0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
-    @media(max-width: ${BREAKPOINTS.md}) {
-        width: 90vw;
-        max-width: 450px;
-        margin: 0 5vw;
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
+        width: 90%;
+        max-width: 400px;
+        margin: 20px 5% 0;
     }
 `;
 
@@ -34,7 +33,7 @@ const CardImage = styled.div`
     position: relative;
     height: 60%;
 
-    @media(max-width: ${BREAKPOINTS.sm}) {
+    @media(max-width: ${props => props.theme.breakpoints.sm}) {
         height: 50%;
     }
 `;
@@ -42,7 +41,7 @@ const CardImage = styled.div`
 const CardBody = styled.p`
     margin: 10px;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         font-size: 0.9rem;
         margin: 5px;
     }

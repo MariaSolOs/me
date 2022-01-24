@@ -3,7 +3,11 @@ import 'styled-components';
 declare module 'styled-components' {
     export interface DefaultTheme {
         colors: {
-            link: string;
+            purple: string;
+        }
+        breakpoints: {
+            sm: string;
+            md: string;
         }
     }
 }

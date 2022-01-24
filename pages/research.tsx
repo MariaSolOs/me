@@ -1,21 +1,16 @@
 import styled from 'styled-components';
 
-import { BREAKPOINTS } from 'global-constants';
-
 import Image from 'next/image';
-import PageHead from 'components/PageHead';
 import Link from 'components/Link';
 import fieldsImg from 'public/images/fields.jpg';
 
-const Container = styled.div`
+const Container = styled.main`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         width: 90%;
     }
 `;
@@ -24,7 +19,7 @@ const Text = styled.p`
     text-align: center;
     font-size: 1.1rem;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         font-size: 0.95rem;
     }
 `;
@@ -34,7 +29,6 @@ const PRAKASH_LINK = 'https://www.cs.mcgill.ca/~prakash/';
 
 const ResearchPage = () => (
     <Container>
-        <PageHead description="Participant of FUSRP 2019 and research assistant of Prakash Panangaden during summer 2020." />
         <Image
         src={fieldsImg}
         alt="Fields Institute 2019"

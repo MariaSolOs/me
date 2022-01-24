@@ -2,7 +2,7 @@ import React, { AnchorHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 const Anchor = styled.a`
-    color: ${props => props.theme.colors.link};
+    color: ${props => props.theme.colors.purple};
     font-weight: bold;
 `;
 

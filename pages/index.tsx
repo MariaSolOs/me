@@ -1,19 +1,11 @@
 import styled from 'styled-components';
 
-import { BREAKPOINTS } from 'global-constants';
-
-import PageHead from 'components/PageHead';
-
-const Container = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+const Container = styled.main`
     padding: 0 50px;
     box-sizing: border-box;
+    margin: auto;
 
-    @media(max-width: ${BREAKPOINTS.sm}) {
+    @media(max-width: ${props => props.theme.breakpoints.sm}) {
         padding: 0 30px;
     }
 `;
@@ -23,29 +15,28 @@ const Title = styled.h1`
     font-size: 3.5rem;
     margin: 0;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         font-size: 3rem;
     }
 
-    @media(max-width: ${BREAKPOINTS.sm}) {
+    @media(max-width: ${props => props.theme.breakpoints.sm}) {
         font-size: 2.5rem;
     }
 `;
 
 const Subtitle = styled.h2`
-    @media(max-width: ${BREAKPOINTS.sm}) {
+    @media(max-width: ${props => props.theme.breakpoints.sm}) {
         font-size: 1.2rem;
     }
 `;
 
 const HomePage = () => (
     <Container>
-        <PageHead description="Undergrad at McGill, incoming SWE at Microsoft, and nerd without shame." />
         <div>
             <Title>Hi, I&apos;m Maria José.</Title>
             <Subtitle>
-                Undergrad at McGill, incoming SWE at Microsoft, 
-                and nerd without shame.
+                McGill alumni, incoming SWE at Microsoft, voracious reader,
+                <br />and nerd without shame.
             </Subtitle>
         </div>
     </Container>

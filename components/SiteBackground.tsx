@@ -8,17 +8,16 @@ const Background = styled.div<StyleProps>`
     inset: 0;
     transition: all 500ms ease-in-out;
     background-size: ${props => props.splitBackground ? '100' : '200'}%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 `;
-
-type Props = {
-    className?: string;
-}
 
 type StyleProps = {
     splitBackground: boolean;
 }
 
-const SiteBackground: React.FC<Props> = (props) => {
+const SiteBackground: React.FC<React.HTMLAttributes<HTMLDivElement>> = (props) => {
     const router = useRouter();
 
     return (

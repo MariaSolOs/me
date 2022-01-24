@@ -1,17 +1,11 @@
 import styled from 'styled-components';
 
 import routes from 'routes';
-import { BREAKPOINTS } from 'global-constants';
 
 import NextLink from 'next/link';
 import Link from 'components/Link';
 
 const Bar = styled.nav`
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -24,7 +18,7 @@ const NavLink = styled(Link)`
     margin-right: 2rem;
     font-size: 1.1rem;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         font-size: 0.95rem;
         margin-right: 10px;
     }
@@ -35,7 +29,7 @@ const Brand = styled(NavLink)`
     font-size: 2rem;
     margin: 0 auto 0 2rem;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         font-size: 1.4rem;
         margin-left: 0;
     }

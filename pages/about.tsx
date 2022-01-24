@@ -1,18 +1,11 @@
 import styled from 'styled-components';
 
-import { BREAKPOINTS } from 'global-constants';
-
-import PageHead from 'components/PageHead';
 import Link from 'components/Link';
 import cv from 'public/CV.pdf';
 
-const Container = styled.div`
+const Container = styled.main`
     width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    margin: auto;
 `;
 
 const Text = styled.p`
@@ -20,23 +13,22 @@ const Text = styled.p`
     font-size: 1.3rem;
     margin-top: 0;
 
-    @media(max-width: ${BREAKPOINTS.md}) {
+    @media(max-width: ${props => props.theme.breakpoints.md}) {
         font-size: 1rem;
     }
 `;
 
+// TODO: Update CV
 const MCGILL_URL = 'https://www.mcgill.ca/';
-const RAMBLE_URL = 'https://www.experienceramble.com/';
 
 const AboutPage = () => (
     <Container>
-        <PageHead description="I am an undergradute student of mathematics and computer science at McGill University, a teaching assistant, co-founder of Ramble, and a huge nerd." />
         <Text>
-            I am an undergradute student of mathematics and computer science at{' '}
+            I studied mathematics and computer science at{' '}
             <Link href={MCGILL_URL} target="_blank" rel="noopener noreferrer">
-            McGill University</Link>, a teaching assistant, co-founder of{' '}
-            <Link href={RAMBLE_URL} target="_blank" rel="noopener noreferrer">Ramble</Link>, 
-            and a huge nerd. As long as I&apos;m coding, I&apos;ll be 
+            McGill University</Link>, where I didn&apos;t only learn about booleans and
+            integrals but also flexed my debugging skills as a teaching assistant. I&apos;m a 
+            huge nerd; as long as I&apos;m coding, I&apos;ll be 
             happy (from the scary pointer nightmares in C to setting up a fancy 
             CSS animation). 
         </Text>
