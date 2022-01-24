@@ -97,9 +97,13 @@ const ProjectsPage = () => (
         </Gallery>
         <GalleryTitle>Game Dev</GalleryTitle>
         <Description>
-            I&apos;m an amateur game developer. What initially captivated me of{' '}
+            I&apos;m an amateur game developer. In fact, what initially captivated me of{' '}
             computer science was how much it felt like a videogame (&quot;bugs vs{' '}
-            coders&quot;). I create my games using Unity.
+            coders&quot;). If you want to play my games visit my{' '}
+            <Link
+            href="https://mariasolos.itch.io/" 
+            target="_blank" 
+            rel="noopener noreferrer">itch.io page</Link>!
         </Description>
         <Gallery>
             <ProjectCard image={hilbertImg}>
