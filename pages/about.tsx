@@ -24,7 +24,7 @@ const TYPESCRIPT_URL = 'https://www.typescriptlang.org/';
 const AboutPage = () => (
     <Container>
         <Text>
-            I'm a software engineer at Microsoft (JavaScript tooling and{' '}
+            I&apos;m a software engineer at Microsoft (JavaScript tooling and{' '}
             <Link href={TYPESCRIPT_URL} target="_blank" rel="noopener noreferrer">
             TypeScript</Link> team). On 2021 I completed my undergraduate degree{' '}
             in mathematics and computer science at{' '}
