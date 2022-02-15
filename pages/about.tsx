@@ -19,19 +19,23 @@ const Text = styled.p`
 `;
 
 const MCGILL_URL = 'https://www.mcgill.ca/';
+const TYPESCRIPT_URL = 'https://www.typescriptlang.org/';
 
 const AboutPage = () => (
     <Container>
         <Text>
-            I studied mathematics and computer science at{' '}
+            I'm a software engineer at Microsoft (JavaScript tooling and{' '}
+            <Link href={TYPESCRIPT_URL} target="_blank" rel="noopener noreferrer">
+            TypeScript</Link> team). On 2021 I completed my undergraduate degree{' '}
+            in mathematics and computer science at{' '}
             <Link href={MCGILL_URL} target="_blank" rel="noopener noreferrer">
             McGill University</Link>, where I didn&apos;t only learn about booleans and
-            integrals but also flexed my debugging skills as a teaching assistant. I&apos;m a 
-            huge nerd; as long as I&apos;m coding, I&apos;ll be 
-            happy (from the scary pointer nightmares in C to setting up a fancy 
-            CSS animation). 
+            integrals but also flexed my debugging skills as a teaching assistant. 
         </Text>
         <Text>
+            I&apos;m a huge nerd; as long as I&apos;m coding, I&apos;ll be 
+            happy (from the scary pointer nightmares in C to setting up a fancy 
+            CSS animation).<br />
             Oh, and I have a cat, her name is Ophelia. 
         </Text>
         <Text>
