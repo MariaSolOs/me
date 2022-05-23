@@ -25,19 +25,15 @@ const Icon = styled(FontAwesomeIcon)`
     }
 `;
 
-const GITHUB_URL = 'https://github.com/MariaSolOs';
-const LINKEDIN_URL = 'https://www.linkedin.com/in/mariasolano151822';
-const EMAIL = 'majosolano99@gmail.com';
-
 const Footer = () => (
     <Bar>
-        <a href={GITHUB_URL} rel="noopener noreferrer" target="_blank">
+        <a href="https://github.com/MariaSolOs" rel="noopener noreferrer" target="_blank">
             <Icon icon={faGithub} />
         </a>
-        <a href={LINKEDIN_URL} rel="noopener noreferrer" target="_blank">
+        <a href="https://www.linkedin.com/in/mariasolano151822" rel="noopener noreferrer" target="_blank">
             <Icon icon={faLinkedin} />
         </a>
-        <a href={`mailto:${EMAIL}`}>
+        <a href={`mailto:majosolano99@gmail.com`}>
             <Icon icon={faEnvelope} />
         </a>
     </Bar>

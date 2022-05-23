@@ -18,17 +18,14 @@ const Text = styled.p`
     }
 `;
 
-const MCGILL_URL = 'https://www.mcgill.ca/';
-const TYPESCRIPT_URL = 'https://www.typescriptlang.org/';
-
 const AboutPage = () => (
     <Container>
         <Text>
             I&apos;m a software engineer at Microsoft (JavaScript tooling and{' '}
-            <Link href={TYPESCRIPT_URL} target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
             TypeScript</Link> team). On 2021 I completed my undergraduate degree{' '}
             in mathematics and computer science at{' '}
-            <Link href={MCGILL_URL} target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">
             McGill University</Link>, where I didn&apos;t only learn about booleans and
             integrals but also flexed my debugging skills as a teaching assistant. 
         </Text>
