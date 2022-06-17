@@ -23,7 +23,7 @@ const AboutPage = () => (
         <Text>
             I&apos;m a software engineer at Microsoft (JavaScript tooling and{' '}
             <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
-            TypeScript</Link> team). On 2021 I completed my undergraduate degree{' '}
+            TypeScript</Link> team). In 2021 I completed my undergraduate degree{' '}
             in mathematics and computer science at{' '}
             <Link href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">
             McGill University</Link>, where I didn&apos;t only learn about booleans and
