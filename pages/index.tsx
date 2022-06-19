@@ -33,7 +33,7 @@ const Subtitle = styled.h2`
 const HomePage = () => (
     <Container>
         <div>
-            <Title>Hi, I&apos;m Maria José.</Title>
+            <Title>Hi, I&apos;m Maria.</Title>
             <Subtitle>
                 SWE at Microsoft, McGill alumni, voracious reader,
                 <br />and nerd without shame.
