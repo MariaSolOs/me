@@ -27,7 +27,9 @@ const AboutPage = () => (
             in mathematics and computer science at{' '}
             <Link href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">
             McGill University</Link>, where I didn&apos;t only learn about booleans and
-            integrals but also flexed my debugging skills as a teaching assistant. 
+            integrals but also flexed my debugging skills as a teaching assistant (and it seems
+            like <Link href="https://www.cs.mcgill.ca/academic/ta/awards/winners/" target="_blank" rel="noopener noreferrer">
+            I was good at it</Link>). 
         </Text>
         <Text>
             I&apos;m a huge nerd; as long as I&apos;m coding, I&apos;ll be 

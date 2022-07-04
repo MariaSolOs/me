@@ -35,7 +35,7 @@ const HomePage = () => (
         <div>
             <Title>Hi, I&apos;m Maria.</Title>
             <Subtitle>
-                SWE at Microsoft, McGill alumni, voracious reader,
+                SWE at Microsoft, open source enthusiast, McGill alumni,
                 <br />and nerd without shame.
             </Subtitle>
         </div>
