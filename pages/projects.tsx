@@ -5,8 +5,9 @@ import ProjectCard from 'components/ProjectCard';
 import rambleImg from 'public/images/ramble.png';
 import borelImg from 'public/images/borel.png';
 import ohbaImg from 'public/images/OHBA.png';
-import hilbertImg from 'public/images/hilbert.png';
 import pwaSimulatorImg from 'public/images/pwa-simulator.png';
+import hilbertImg from 'public/images/hilbert.png';
+import ratonImg from 'public/images/raton-cat.png';
 
 const Container = styled.main`
     width: 90%;
@@ -113,6 +114,14 @@ const ProjectsPage = () => (
                 target="_blank" 
                 rel="noopener noreferrer">Hilbert Space</Link>, a real analysis
                 pun that went too far. Do you know the difference between &forall; and &exist;?
+            </ProjectCard>
+            <ProjectCard image={ratonImg}>
+                As my first artsy attempt, the assets in{' '}
+                <Link 
+                href="https://mariasolos.itch.io/ratn"
+                target="_blank" 
+                rel="noopener noreferrer">Ratón</Link> are all my own. Still a WIP, but
+                a cute, classic game nonetheless (gotta love those <i>Tom and Jerry</i> vibes).
             </ProjectCard>
         </Gallery>
     </Container>
