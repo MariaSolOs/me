@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import withRoutes from 'nextjs-routes/config';
 
 /**
@@ -5,6 +6,10 @@ import withRoutes from 'nextjs-routes/config';
  */
 const config = {
     reactStrictMode: true,
+
+    compiler: {
+        styledComponents: true
+    },
 
     webpack(config) {
         // For importing my CV
