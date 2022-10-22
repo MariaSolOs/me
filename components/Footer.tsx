@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import type { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
@@ -25,17 +27,20 @@ const Icon = styled(FontAwesomeIcon)`
     }
 `;
 
+const links: { href: string; icon: FontAwesomeIconProps['icon']; }[] = [
+    { href: 'https://twitter.com/MariaSolanoOs', icon: faTwitter },
+    { href: 'https://github.com/MariaSolOs', icon: faGithub },
+    { href: 'https://www.linkedin.com/in/mariasolano151822', icon: faLinkedin },
+    { href: 'mailto:majosolano99@gmail.com', icon: faEnvelope }
+];
+
 const Footer = () => (
     <Bar>
-        <a href="https://github.com/MariaSolOs" rel="noopener noreferrer" target="_blank">
-            <Icon icon={faGithub} />
-        </a>
-        <a href="https://www.linkedin.com/in/mariasolano151822" rel="noopener noreferrer" target="_blank">
-            <Icon icon={faLinkedin} />
-        </a>
-        <a href={`mailto:majosolano99@gmail.com`}>
-            <Icon icon={faEnvelope} />
-        </a>
+        {links.map((link, i) =>
+            <a key={i} href={link.href} rel="noopener noreferrer" target="_blank">
+                <Icon icon={link.icon} />
+            </a>
+        )}
     </Bar>
 );
 
