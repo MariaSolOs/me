@@ -1,5 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
+import type { FCC } from 'react';
+import type { StaticImageData } from 'next/image';
 
 import Image from 'next/image';
 
@@ -51,7 +52,7 @@ type Props = {
     image: StaticImageData;
 }
 
-const ProjectCard: React.FC<Props> = (props) => (
+const ProjectCard: FCC<Props> = (props) => (
     <Card>
         <CardImage>
             <Image
