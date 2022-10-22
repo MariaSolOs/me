@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import routes from 'routes';
-
 import NextLink from 'next/link';
 import Link from 'components/Link';
 
@@ -35,21 +33,23 @@ const Brand = styled(NavLink)`
     }
 `;
 
-const Navbar = () => (
-    <Bar>
-        <NextLink { ...routes.home } passHref>
-            <Brand>M.S.</Brand>
-        </NextLink>
-        <NextLink { ...routes.projects } passHref>
-            <NavLink>Projects</NavLink>
-        </NextLink>
-        <NextLink { ...routes.research } passHref>
-            <NavLink>Research</NavLink>
-        </NextLink>
-        <NextLink { ...routes.about } passHref>
-            <NavLink>About me</NavLink>
-        </NextLink>
-    </Bar>
-);
+const Navbar = () => {
+    return (
+        <Bar>
+            <NextLink href={{ pathname: '/' }} passHref>
+                <Brand>M.S.</Brand>
+            </NextLink>
+            <NextLink href={{ pathname: '/projects' }} passHref>
+                <NavLink>Projects</NavLink>
+            </NextLink>
+            <NextLink href={{ pathname: '/research' }} passHref>
+                <NavLink>Research</NavLink>
+            </NextLink>
+            <NextLink href={{ pathname: '/about' }} passHref>
+                <NavLink>About me</NavLink>
+            </NextLink>
+        </Bar>
+    );
+}
 
 export default Navbar;

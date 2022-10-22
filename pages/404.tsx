@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import routes from 'routes';
-
 import NextLink from 'next/link';
 import Link from 'components/Link';
 
@@ -29,7 +27,7 @@ const Page404 = () => (
         </Message>
         <Message>
             Go to the{' '}
-            <NextLink { ...routes.home } passHref><Link>homepage</Link></NextLink>.
+            <NextLink href={{ pathname: '/' }} passHref><Link>homepage</Link></NextLink>.
         </Message>
     </Container>
 );

@@ -1,17 +1,12 @@
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+import withRoutes from 'nextjs-routes/config';
 
 /**
  * @type {import('next').NextConfig}
  */
-module.exports = {
+const config = {
     reactStrictMode: true,
 
-    webpack(config, { dev, isServer }) {
-        // For getting all Typescript errors
-        if (dev && isServer) {
-            config.plugins.push(new ForkTsCheckerWebpackPlugin());
-        }
-
+    webpack(config) {
         // For importing my CV
         config.module.rules.push({
             test: /\.(pdf)$/,
@@ -24,3 +19,5 @@ module.exports = {
         return config;
     }
 }
+
+export default withRoutes({ outDir: 'types' })(config);
