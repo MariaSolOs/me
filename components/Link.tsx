@@ -1,4 +1,5 @@
-import React, { AnchorHTMLAttributes } from 'react';
+import { forwardRef } from 'react';
+import type { AnchorHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 const Anchor = styled.a`
@@ -10,7 +11,7 @@ type Props = {
     className?: string;
 } & AnchorHTMLAttributes<HTMLAnchorElement>;
 
-const Link = React.forwardRef<HTMLAnchorElement, Props>(function Link(props, ref) {
+const Link = forwardRef<HTMLAnchorElement, Props>(function Link(props, ref) {
     return (
         <Anchor ref={ref} { ...props }>{props.children}</Anchor>
     );

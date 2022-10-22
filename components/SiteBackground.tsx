@@ -1,6 +1,6 @@
-import React from 'react';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
+import type { FC, HTMLAttributes } from 'react';
 
 const Background = styled.div<StyleProps>`
     background: linear-gradient(to right, #F2E9E4 50%, #9A8C98 50%);
@@ -17,7 +17,7 @@ type StyleProps = {
     splitBackground: boolean;
 }
 
-const SiteBackground: React.FC<React.HTMLAttributes<HTMLDivElement>> = (props) => {
+const SiteBackground: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
     const router = useRouter();
 
     return (
