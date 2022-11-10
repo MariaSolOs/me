@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Link from 'components/Link';
 import ProjectCard from 'components/ProjectCard';
 import rambleImg from 'public/images/ramble.png';
-import borelImg from 'public/images/borel.png';
 import ohbaImg from 'public/images/OHBA.png';
 import pwaSimulatorImg from 'public/images/pwa-simulator.png';
 import hilbertImg from 'public/images/hilbert.png';
@@ -63,15 +62,6 @@ const ProjectsPage = () => (
                 create and attend a wide range of unique experiences.
                 I coded every single line of code in Ramble, using Typescript, 
                 Next JS, a MongoDB database and an Apollo GraphQL server.
-            </ProjectCard>
-            <ProjectCard image={borelImg}>
-                <Link
-                href="https://borel.herokuapp.com/" 
-                target="_blank" 
-                rel="noopener noreferrer">Borel</Link> is a small application 
-                for university note-takers.
-                Although it is still in its early stages, I want Borel to 
-                become a lecture notes marketplace.
             </ProjectCard>
             <ProjectCard image={ohbaImg}>
                 After a semester of being a &quot;virtual&quot; TA during the COVID-19 
