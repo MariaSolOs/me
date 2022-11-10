@@ -7,6 +7,7 @@ import ohbaImg from 'public/images/OHBA.png';
 import pwaSimulatorImg from 'public/images/pwa-simulator.png';
 import hilbertImg from 'public/images/hilbert.png';
 import ratonImg from 'public/images/raton-cat.png';
+import addMultifileImg from 'public/images/add-multifile.png';
 
 const Container = styled.main`
     width: 90%;
@@ -112,6 +113,22 @@ const ProjectsPage = () => (
                 target="_blank" 
                 rel="noopener noreferrer">Ratón</Link> are all my own. Still a WIP, but
                 a cute, classic game nonetheless (gotta love those <i>Tom and Jerry</i> vibes).
+            </ProjectCard>
+        </Gallery>
+        <GalleryTitle>Editor Extensions</GalleryTitle>
+        <Description>
+            As a developer, I like to create tools that I would like to have myself.{' '}
+            When I&apos;m not figuring out the dark mysteries of Visual Studio extensibility,
+            I sometimes give my 2¢ to VS Code extensions.
+        </Description>
+        <Gallery>
+            <ProjectCard image={addMultifileImg}>
+                Simple yet practical,{' '}
+                <Link
+                href="https://marketplace.visualstudio.com/items?itemName=mariasolos.add-multifile"
+                target="_blank" 
+                rel="noopener noreferrer">Add Multi File</Link> was my first VS Code extension,{' '}
+                which revamps the &quot;New File/Folder experience&quot; with custom multi-item templates.
             </ProjectCard>
         </Gallery>
     </Container>
