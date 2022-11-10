@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import type { FCC } from 'react';
 import type { StaticImageData } from 'next/image';
 
-import Image from 'next/image';
+import NextImage from 'next/image';
 
 const Card = styled.div`
     border-radius: 10px;
@@ -39,6 +39,10 @@ const CardImage = styled.div`
     }
 `;
 
+const Image = styled(NextImage)`
+    object-fit: cover;
+`;
+
 const CardBody = styled.p`
     margin: 10px;
 
@@ -58,9 +62,9 @@ const ProjectCard: FCC<Props> = (props) => (
             <Image
             src={props.image}
             alt="Project"
-            layout="fill"
+            fill
             placeholder="blur"
-            objectFit="cover" />
+            sizes="500px, (max-width: 900px) 400px" />
         </CardImage>
         <CardBody>{props.children}</CardBody>
     </Card>

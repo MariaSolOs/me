@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Image from 'next/image';
+import NextImage from 'next/image';
 import Link from 'components/Link';
 import fieldsImg from 'public/images/fields.jpg';
 
@@ -24,6 +24,12 @@ const Text = styled.p`
     }
 `;
 
+const Image = styled(NextImage)`
+    object-fit: contain;
+    margin: 0 auto;
+    max-width: 100%;
+`;
+
 const ResearchPage = () => (
     <Container>
         <Image
@@ -31,8 +37,7 @@ const ResearchPage = () => (
         alt="Fields Institute 2019"
         placeholder="blur"
         width={600}
-        height={150}
-        objectFit="contain" />
+        height={150} />
         <Text>
             I was part of the{' '}
             <Link href="http://www.fields.utoronto.ca/activities/19-20/2019-fusrp" target="_blank" rel="noopener noreferrer">
