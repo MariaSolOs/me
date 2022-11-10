@@ -36,16 +36,16 @@ const Brand = styled(NavLink)`
 const Navbar = () => {
     return (
         <Bar>
-            <NextLink href={{ pathname: '/' }} passHref>
+            <NextLink href={{ pathname: '/' }} passHref legacyBehavior>
                 <Brand>M.S.</Brand>
             </NextLink>
-            <NextLink href={{ pathname: '/projects' }} passHref>
+            <NextLink href={{ pathname: '/projects' }} passHref legacyBehavior>
                 <NavLink>Projects</NavLink>
             </NextLink>
-            <NextLink href={{ pathname: '/research' }} passHref>
+            <NextLink href={{ pathname: '/research' }} passHref legacyBehavior>
                 <NavLink>Research</NavLink>
             </NextLink>
-            <NextLink href={{ pathname: '/about' }} passHref>
+            <NextLink href={{ pathname: '/about' }} passHref legacyBehavior>
                 <NavLink>About me</NavLink>
             </NextLink>
         </Bar>
