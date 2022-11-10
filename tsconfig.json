@@ -20,7 +20,8 @@
     "baseUrl": ".",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "incremental": true
+    "incremental": true,
+    "importsNotUsedAsValues": "error"
   },
   "include": [
     "next-env.d.ts",

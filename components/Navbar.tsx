@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import type { Route } from 'nextjs-routes';
 
 import NextLink from 'next/link';
 import Link from 'components/Link';
@@ -33,21 +34,23 @@ const Brand = styled(NavLink)`
     }
 `;
 
+const navItems: { pathname: Route['pathname']; displayName: string; }[] = [
+    { pathname: '/projects', displayName: 'Projects' },
+    { pathname: '/research', displayName: 'Research'  },
+    { pathname: '/about', displayName: 'About me' }
+];
+
 const Navbar = () => {
     return (
         <Bar>
             <NextLink href={{ pathname: '/' }} passHref legacyBehavior>
                 <Brand>M.S.</Brand>
             </NextLink>
-            <NextLink href={{ pathname: '/projects' }} passHref legacyBehavior>
-                <NavLink>Projects</NavLink>
-            </NextLink>
-            <NextLink href={{ pathname: '/research' }} passHref legacyBehavior>
-                <NavLink>Research</NavLink>
-            </NextLink>
-            <NextLink href={{ pathname: '/about' }} passHref legacyBehavior>
-                <NavLink>About me</NavLink>
-            </NextLink>
+            {navItems.map(({ pathname, displayName }, i) =>
+                <NextLink key={i} href={{ pathname }} passHref legacyBehavior>
+                    <NavLink>{displayName}</NavLink>
+                </NextLink>
+            )}
         </Bar>
     );
 }
