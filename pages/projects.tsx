@@ -8,6 +8,7 @@ import pwaSimulatorImg from 'public/images/pwa-simulator.png';
 import hilbertImg from 'public/images/hilbert.png';
 import ratonImg from 'public/images/raton-cat.png';
 import addMultifileImg from 'public/images/add-multifile.png';
+import vsLintingImg from 'public/images/vs-linting.png';
 
 const Container = styled.main`
     width: 90%;
@@ -115,13 +116,22 @@ const ProjectsPage = () => (
                 a cute, classic game nonetheless (gotta love those <i>Tom and Jerry</i> vibes).
             </ProjectCard>
         </Gallery>
-        <GalleryTitle>Editor Extensions</GalleryTitle>
+        <GalleryTitle>Editor Tooling</GalleryTitle>
         <Description>
             As a developer, I like to create tools that I would like to have myself.{' '}
             When I&apos;m not figuring out the dark mysteries of Visual Studio extensibility,
             I sometimes give my 2¢ to VS Code extensions.
         </Description>
         <Gallery>
+            <ProjectCard image={vsLintingImg}>
+                As my first large project at Microsoft,{' '}
+                <Link
+                href="https://devblogs.microsoft.com/visualstudio/building-a-new-javascript-linting-experience-in-visual-studio/"
+                target="_blank" 
+                rel="noopener noreferrer">I rewrote the built-in linting extension</Link>, enabling ESLint{' '}
+                support in HTML and Vue for the first time, as well as linting quick fixes and a flexible linter{' '}
+                configuration.
+            </ProjectCard>
             <ProjectCard image={addMultifileImg}>
                 Simple yet practical,{' '}
                 <Link
