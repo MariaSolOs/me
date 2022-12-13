@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import Link from 'components/Link';
 import ProjectCard from 'components/ProjectCard';
 import rambleImg from 'public/images/ramble.png';
+import paradeigmaImg from 'public/images/paradeigma.png';
 import ohbaImg from 'public/images/OHBA.png';
 import pwaSimulatorImg from 'public/images/pwa-simulator.png';
 import hilbertImg from 'public/images/hilbert.png';
 import ratonImg from 'public/images/raton-cat.png';
-import addMultifileImg from 'public/images/add-multifile.png';
 import vsLintingImg from 'public/images/vs-linting.png';
+import addMultifileImg from 'public/images/add-multifile.png';
 
 const Container = styled.main`
     width: 90%;
@@ -64,6 +65,14 @@ const ProjectsPage = () => (
                 create and attend a wide range of unique experiences.
                 I coded every single line of code in Ramble, using Typescript, 
                 Next JS, a MongoDB database and an Apollo GraphQL server.
+            </ProjectCard>
+            <ProjectCard image={paradeigmaImg}>
+                Tired of copy-pasting code from Stack Overflow? Try{' '}
+                <Link
+                href="https://paradeigma-web-app.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer">Paradeigma</Link>, and easily find{' '}
+                the code examples you need (and even generate snippets to use in your IDE!).
             </ProjectCard>
             <ProjectCard image={ohbaImg}>
                 After a semester of being a &quot;virtual&quot; TA during the COVID-19 
