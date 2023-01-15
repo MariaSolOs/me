@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.32.0"],\
             ["eslint-config-next", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:13.1.2"],\
             ["gray-matter", "npm:4.0.3"],\
+            ["markdown-to-jsx", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:7.1.8"],\
             ["next", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:13.1.2"],\
             ["nextjs-routes", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:1.0.7"],\
             ["react", "npm:18.2.0"],\
@@ -3857,6 +3858,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.32.0"],\
             ["eslint-config-next", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:13.1.2"],\
             ["gray-matter", "npm:4.0.3"],\
+            ["markdown-to-jsx", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:7.1.8"],\
             ["next", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:13.1.2"],\
             ["nextjs-routes", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:1.0.7"],\
             ["react", "npm:18.2.0"],\
@@ -3868,6 +3870,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vercel", "npm:28.12.4"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["markdown-to-jsx", [\
+        ["npm:7.1.8", {\
+          "packageLocation": "./.yarn/cache/markdown-to-jsx-npm-7.1.8-51a9bc0852-4823f90e8b.zip/node_modules/markdown-to-jsx/",\
+          "packageDependencies": [\
+            ["markdown-to-jsx", "npm:7.1.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:7.1.8", {\
+          "packageLocation": "./.yarn/__virtual__/markdown-to-jsx-virtual-56699d0a31/0/cache/markdown-to-jsx-npm-7.1.8-51a9bc0852-4823f90e8b.zip/node_modules/markdown-to-jsx/",\
+          "packageDependencies": [\
+            ["markdown-to-jsx", "virtual:a96cc81a0716e52b453deb4c73a7aa51be5f9a65348f307e3334b024a43d4e002a16381d0e2ca24b843a31393eacfcee618e106341a7e1b02bbca17a9d5a203f#npm:7.1.8"],\
+            ["@types/react", "npm:18.0.26"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["merge2", [\

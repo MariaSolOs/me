@@ -14,6 +14,7 @@
         "@fortawesome/free-solid-svg-icons": "^6.2.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "gray-matter": "^4.0.3",
+        "markdown-to-jsx": "^7.1.8",
         "next": "^13.1.2",
         "nextjs-routes": "^1.0.7",
         "react": "18.2.0",

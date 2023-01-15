@@ -8,6 +8,8 @@ declare module "nextjs-routes" {
   export type Route =
     | StaticRoute<"/404">
     | StaticRoute<"/about">
+    | DynamicRoute<"/blog/[slug]", { "slug": string }>
+    | StaticRoute<"/blog">
     | StaticRoute<"/">
     | StaticRoute<"/projects">
     | StaticRoute<"/research">;

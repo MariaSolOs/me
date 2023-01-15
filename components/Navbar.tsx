@@ -34,9 +34,10 @@ const Brand = styled(NavLink)`
     }
 `;
 
-const navItems: { pathname: Route['pathname']; displayName: string }[] = [
+const navItems: { pathname: Exclude<Route, { query: any }>['pathname']; displayName: string }[] = [
     { pathname: '/projects', displayName: 'Projects' },
     { pathname: '/research', displayName: 'Research' },
+    { pathname: '/blog', displayName: 'Blog' },
     { pathname: '/about', displayName: 'About me' }
 ];
 
