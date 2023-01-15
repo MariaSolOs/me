@@ -7,7 +7,7 @@ const Background = styled.div<StyleProps>`
     position: absolute;
     inset: 0;
     transition: all 500ms ease-in-out;
-    background-size: ${props => props.splitBackground ? '100' : '200'}%;
+    background-size: ${(props) => props.splitBackground ? '100' : '200'}%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ const Background = styled.div<StyleProps>`
 
 type StyleProps = {
     splitBackground: boolean;
-}
+};
 
 const SiteBackground: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
     const router = useRouter();
@@ -25,6 +25,6 @@ const SiteBackground: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
             {props.children}
         </Background>
     );
-}
+};
 
 export default SiteBackground;

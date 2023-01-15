@@ -9,7 +9,7 @@ import Footer from 'components/Footer';
 
 // Fixes the huge icon initial flash
 import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css'; 
+import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 const GlobalStyle = createGlobalStyle`
@@ -29,7 +29,7 @@ const theme: DefaultTheme = {
         sm: '450px',
         md: '900px'
     }
-}
+};
 
 const App = (props: AppProps) => {
     const { Component, pageProps } = props;
@@ -39,11 +39,11 @@ const App = (props: AppProps) => {
             <GlobalStyle />
             <SiteBackground>
                 <Navbar />
-                <Component { ...pageProps } />
+                <Component {...pageProps} />
                 <Footer />
             </SiteBackground>
         </ThemeProvider>
     );
-}
+};
 
 export default App;

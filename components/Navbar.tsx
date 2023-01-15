@@ -17,7 +17,7 @@ const NavLink = styled(Link)`
     margin-right: 2rem;
     font-size: 1.1rem;
 
-    @media(max-width: ${props => props.theme.breakpoints.md}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         font-size: 0.95rem;
         margin-right: 10px;
     }
@@ -28,15 +28,15 @@ const Brand = styled(NavLink)`
     font-size: 2rem;
     margin: 0 auto 0 2rem;
 
-    @media(max-width: ${props => props.theme.breakpoints.md}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         font-size: 1.4rem;
         margin-left: 0;
     }
 `;
 
-const navItems: { pathname: Route['pathname']; displayName: string; }[] = [
+const navItems: { pathname: Route['pathname']; displayName: string }[] = [
     { pathname: '/projects', displayName: 'Projects' },
-    { pathname: '/research', displayName: 'Research'  },
+    { pathname: '/research', displayName: 'Research' },
     { pathname: '/about', displayName: 'About me' }
 ];
 
@@ -46,13 +46,13 @@ const Navbar = () => {
             <NextLink href={{ pathname: '/' }} passHref legacyBehavior>
                 <Brand>M.S.</Brand>
             </NextLink>
-            {navItems.map(({ pathname, displayName }, i) =>
+            {navItems.map(({ pathname, displayName }, i) => (
                 <NextLink key={i} href={{ pathname }} passHref legacyBehavior>
                     <NavLink>{displayName}</NavLink>
                 </NextLink>
-            )}
+            ))}
         </Bar>
     );
-}
+};
 
 export default Navbar;

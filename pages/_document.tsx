@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import type { DocumentContext } from 'next/document';
 
@@ -8,21 +8,22 @@ export default class CustomDocument extends Document {
         const originalRenderPage = context.renderPage;
 
         try {
-            context.renderPage = () => originalRenderPage({
-                enhanceApp: App => props => sheet.collectStyles(<App { ...props } />)
-            });
+            context.renderPage = () =>
+                originalRenderPage({
+                    enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />)
+                });
 
             const initialProps = await Document.getInitialProps(context);
 
             return {
                 ...initialProps,
                 styles: (
-                    <>  
+                    <>
                         {initialProps.styles}
                         {sheet.getStyleElement()}
                     </>
                 )
-            }
+            };
         } finally {
             sheet.seal();
         }
@@ -46,7 +47,10 @@ export default class CustomDocument extends Document {
                     <link rel="manifest" href="/manifest.json" />
 
                     {/* Main font */}
-                    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@400;600&display=swap"
+                        rel="stylesheet"
+                    />
                 </Head>
                 <body>
                     <Main />

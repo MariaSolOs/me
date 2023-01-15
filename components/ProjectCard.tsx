@@ -23,7 +23,7 @@ const Card = styled.div`
                     0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
-    @media(max-width: ${props => props.theme.breakpoints.md}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         width: 90%;
         max-width: 400px;
         margin: 20px 5% 0;
@@ -34,7 +34,7 @@ const CardImage = styled.div`
     position: relative;
     height: 60%;
 
-    @media(max-width: ${props => props.theme.breakpoints.sm}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.sm}) {
         height: 50%;
     }
 `;
@@ -46,7 +46,7 @@ const Image = styled(NextImage)`
 const CardBody = styled.p`
     margin: 10px;
 
-    @media(max-width: ${props => props.theme.breakpoints.md}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         font-size: 0.9rem;
         margin: 5px;
     }
@@ -54,17 +54,18 @@ const CardBody = styled.p`
 
 type Props = {
     image: StaticImageData;
-}
+};
 
 const ProjectCard: FCC<Props> = (props) => (
     <Card>
         <CardImage>
             <Image
-            src={props.image}
-            alt="Project"
-            fill
-            placeholder="blur"
-            sizes="500px, (max-width: 900px) 400px" />
+                src={props.image}
+                alt="Project"
+                fill
+                placeholder="blur"
+                sizes="500px, (max-width: 900px) 400px"
+            />
         </CardImage>
         <CardBody>{props.children}</CardBody>
     </Card>

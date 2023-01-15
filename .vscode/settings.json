@@ -1,12 +1,18 @@
 {
-  "colorize.include": [
-    "**/*.tsx"
-  ],
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/.pnp.*": true
-  },
-  "eslint.nodePath": ".yarn/sdks",
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+    "colorize.include": [
+        "**/*.tsx"
+    ],
+    "search.exclude": {
+        "**/.yarn": true,
+        "**/.pnp.*": true
+    },
+    "eslint.nodePath": ".yarn/sdks",
+    "typescript.tsdk": ".yarn/sdks/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.defaultFormatter": "dprint.dprint",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.json": "jsonc", // Allow comments in JSON
+        "*.env.local": "env"
+    }
 }

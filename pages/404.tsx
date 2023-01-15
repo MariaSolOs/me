@@ -15,7 +15,7 @@ const Message = styled.h3`
     text-align: center;
     margin-top: 0;
 
-    @media(max-width: ${props => props.theme.breakpoints.sm}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.sm}) {
         font-size: 1rem;
     }
 `;
@@ -27,7 +27,9 @@ const Page404 = () => (
         </Message>
         <Message>
             Go to the{' '}
-            <NextLink href={{ pathname: '/' }} passHref><Link>homepage</Link></NextLink>.
+            <NextLink href={{ pathname: '/' }} passHref>
+                <Link>homepage</Link>
+            </NextLink>.
         </Message>
     </Container>
 );

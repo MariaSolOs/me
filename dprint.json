@@ -1,0 +1,35 @@
+{
+    "lineWidth": 120,
+    "indentWidth": 4,
+    "typescript": {
+        "quoteStyle": "preferSingle",
+        "jsx.quoteStyle": "preferDouble",
+        "trailingCommas": "never",
+        "operatorPosition": "sameLine",
+        "module.sortImportDeclarations": "maintain",
+        "module.sortExportDeclarations": "maintain",
+        "jsxOpeningElement.bracketPosition": "sameLine",
+        "arrowFunction.useParentheses": "force"
+    },
+    "includes": [
+        "**/*.{ts,tsx,js,jsx,cjs,mjs,json,md}"
+    ],
+    "excludes": [
+        // Package managers
+        "**/node_modules",
+        "**/*-lock.json",
+        ".yarn",
+        "/.pnp*",
+        // TypeScript
+        "tsconfig.tsbuildinfo",
+        "types/nextjs-routes.d.ts",
+        // Next JS
+        ".vercel",
+        ".next/"
+    ],
+    "plugins": [
+        "https://plugins.dprint.dev/typescript-0.80.2.wasm",
+        "https://plugins.dprint.dev/json-0.17.0.wasm",
+        "https://plugins.dprint.dev/markdown-0.15.2.wasm"
+    ]
+}

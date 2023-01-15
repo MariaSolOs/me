@@ -23,6 +23,6 @@ const config = {
 
         return config;
     }
-}
+};
 
 export default withRoutes({ outDir: 'types' })(config);

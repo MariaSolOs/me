@@ -18,16 +18,16 @@ const Bar = styled.footer`
 
 const Icon = styled(FontAwesomeIcon)`
     text-decoration: none;
-    color: ${props => props.theme.colors.purple};
+    color: ${(props) => props.theme.colors.purple};
     font-size: 2.2rem;
     margin: 0 1rem;
 
-    @media(max-width: ${props => props.theme.breakpoints.sm}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.sm}) {
         font-size: 1.7rem;
     }
 `;
 
-const links: { href: string; icon: FontAwesomeIconProps['icon']; }[] = [
+const links: { href: string; icon: FontAwesomeIconProps['icon'] }[] = [
     { href: 'https://twitter.com/MariaSolanoOs', icon: faTwitter },
     { href: 'https://github.com/MariaSolOs', icon: faGithub },
     { href: 'https://www.linkedin.com/in/mariasolano151822', icon: faLinkedin },
@@ -36,11 +36,11 @@ const links: { href: string; icon: FontAwesomeIconProps['icon']; }[] = [
 
 const Footer = () => (
     <Bar>
-        {links.map((link, i) =>
+        {links.map((link, i) => (
             <a key={i} href={link.href} rel="noopener noreferrer" target="_blank">
                 <Icon icon={link.icon} />
             </a>
-        )}
+        ))}
     </Bar>
 );
 

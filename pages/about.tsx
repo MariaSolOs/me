@@ -14,7 +14,7 @@ const Text = styled.p`
     font-size: 1.3rem;
     margin-top: 0;
 
-    @media(max-width: ${props => props.theme.breakpoints.md}) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         font-size: 1rem;
     }
 `;
@@ -25,19 +25,22 @@ const AboutPage = () => (
         <Text>
             I&apos;m a software engineer at Microsoft (building JavaScript and{' '}
             <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
-            TypeScript</Link> tools for Visual Studio). In 2021 I completed my undergraduate degree{' '}
-            in mathematics and computer science at{' '}
+                TypeScript
+            </Link>{' '}
+            tools for Visual Studio). In 2021 I completed my undergraduate degree in mathematics and computer science at
+            {' '}
             <Link href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">
-            McGill University</Link>, where I didn&apos;t only learn about booleans and
-            integrals but also flexed my debugging skills as a teaching assistant (and it seems
-            like <Link href="https://www.cs.mcgill.ca/academic/ta/awards/winners/" target="_blank" rel="noopener noreferrer">
-            I was good at it</Link>). 
+                McGill University
+            </Link>, where I didn&apos;t only learn about booleans and integrals but also flexed my debugging skills as
+            a teaching assistant (and it seems like{' '}
+            <Link href="https://www.cs.mcgill.ca/academic/ta/awards/winners/" target="_blank" rel="noopener noreferrer">
+                I was good at it
+            </Link>).
         </Text>
         <Text>
-            I&apos;m a huge nerd; as long as I&apos;m coding, I&apos;ll be 
-            happy (from the scary pointer nightmares in C to setting up a fancy 
-            CSS animation).<br />
-            Oh, and I have a cat, her name is Ophelia. 
+            I&apos;m a huge nerd; as long as I&apos;m coding, I&apos;ll be happy (from the scary pointer nightmares in C
+            to setting up a fancy CSS animation).<br />
+            Oh, and I have a cat, her name is Ophelia.
         </Text>
         <Text>
             Here is my <Link href={cv} target="_blank" rel="noopener noreferrer">CV</Link>.

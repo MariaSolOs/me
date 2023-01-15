@@ -5,7 +5,7 @@ import NextHead from 'next/head';
 type Props = {
     title?: string;
     description?: string;
-}
+};
 
 const Head: FC<Props> = (props) => (
     <NextHead>
@@ -22,6 +22,6 @@ const Head: FC<Props> = (props) => (
 Head.defaultProps = {
     title: 'Maria Solano',
     description: 'SWE at Microsoft, McGill alumni, and voracious learner.'
-}
+};
 
 export default Head;
