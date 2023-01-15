@@ -13,6 +13,7 @@
         "@fortawesome/free-brands-svg-icons": "^6.2.1",
         "@fortawesome/free-solid-svg-icons": "^6.2.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
+        "gray-matter": "^4.0.3",
         "next": "^13.1.2",
         "nextjs-routes": "^1.0.7",
         "react": "18.2.0",
@@ -27,8 +28,8 @@
         "@types/styled-components": "^5.1.26",
         "eslint": "8.32.0",
         "eslint-config-next": "13.1.2",
-        "typescript": "4.8.4",
+        "typescript": "4.9.4",
         "vercel": "^28.12.4"
     },
-    "packageManager": "yarn@3.2.4"
+    "packageManager": "yarn@3.3.1"
 }
