@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Head from 'components/Head';
+
 const Container = styled.main`
     padding: 0 50px;
     box-sizing: border-box;
@@ -32,6 +34,7 @@ const Subtitle = styled.h2`
 
 const HomePage = () => (
     <Container>
+        <Head />
         <div>
             <Title>Hi, I&apos;m Maria.</Title>
             <Subtitle>

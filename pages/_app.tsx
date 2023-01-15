@@ -3,7 +3,6 @@ import { normalize } from 'styled-normalize';
 import type { AppProps } from 'next/app';
 import type { DefaultTheme } from 'styled-components';
 
-import Head from 'components/Head';
 import SiteBackground from 'components/SiteBackground';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
@@ -37,7 +36,6 @@ const App = (props: AppProps) => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Head />
             <GlobalStyle />
             <SiteBackground>
                 <Navbar />

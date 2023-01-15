@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Head from 'components/Head';
 import Link from 'components/Link';
 import ProjectCard from 'components/ProjectCard';
 import rambleImg from 'public/images/ramble.png';
@@ -49,6 +50,7 @@ const Gallery = styled.div`
 
 const ProjectsPage = () => (
     <Container>
+        <Head />
         <GalleryTitle>Web Dev</GalleryTitle>
         <Description>
             I&apos;ve created various full-stack applications: From an office hour{' '}

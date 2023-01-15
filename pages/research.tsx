@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Head from 'components/Head';
 import NextImage from 'next/image';
 import Link from 'components/Link';
 import fieldsImg from 'public/images/fields.jpg';
@@ -32,6 +33,7 @@ const Image = styled(NextImage)`
 
 const ResearchPage = () => (
     <Container>
+        <Head />
         <Image
         src={fieldsImg}
         alt="Fields Institute 2019"

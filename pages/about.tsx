@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Head from 'components/Head';
 import Link from 'components/Link';
 import cv from 'public/CV.pdf';
 
@@ -20,6 +21,7 @@ const Text = styled.p`
 
 const AboutPage = () => (
     <Container>
+        <Head />
         <Text>
             I&apos;m a software engineer at Microsoft (building JavaScript and{' '}
             <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
