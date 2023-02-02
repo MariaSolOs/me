@@ -15,9 +15,9 @@
         "@fortawesome/free-solid-svg-icons": "^6.2.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "gray-matter": "^4.0.3",
-        "markdown-to-jsx": "^7.1.8",
-        "next": "^13.1.2",
-        "nextjs-routes": "^1.0.7",
+        "markdown-to-jsx": "^7.1.9",
+        "next": "^13.1.6",
+        "nextjs-routes": "^1.0.8",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-is": "^18.2.0",
@@ -26,12 +26,12 @@
     },
     "devDependencies": {
         "@types/node": "18.11.18",
-        "@types/react": "18.0.26",
+        "@types/react": "18.0.27",
         "@types/styled-components": "^5.1.26",
-        "eslint": "8.32.0",
-        "eslint-config-next": "13.1.2",
-        "typescript": "4.9.4",
-        "vercel": "^28.12.4"
+        "eslint": "8.33.0",
+        "eslint-config-next": "13.1.6",
+        "typescript": "4.9.5",
+        "vercel": "^28.15.0"
     },
     "packageManager": "yarn@3.3.1"
 }
