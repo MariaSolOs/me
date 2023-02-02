@@ -29,7 +29,7 @@ const PostTitle = styled(Link)`
     font-size: 1.6rem;
     display: block;
     text-decoration: none;
-    
+
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         margin: 1.2rem 0 4px;
         font-size: 1.3rem;
@@ -38,15 +38,18 @@ const PostTitle = styled(Link)`
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
     const slugs = await getAllSlugs(true);
-    const posts = slugs.map(async (slug) => {
+    const posts = await Promise.all(slugs.map(async (slug) => {
         const { meta } = await getPostFromSlug(slug);
         return meta;
+    }));
+
+    // Sort by date (newest first).
+    posts.sort(({ date: date1 }, { date: date2 }) => {
+        return new Date(date2).valueOf() - new Date(date1).valueOf();
     });
 
     return {
-        props: {
-            posts: await Promise.all(posts)
-        }
+        props: { posts }
     };
 };
 
