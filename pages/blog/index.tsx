@@ -6,14 +6,24 @@ import type { Post } from 'types/blog';
 import Head from 'components/Head';
 import NextLink from 'next/link';
 import Link from 'components/Link';
+import NextImage from 'next/image';
 
 const Container = styled.main`
     width: 80%;
     margin: auto;
-    
+
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         width: 95%;
     }
+`;
+
+const List = styled.ul`
+    padding: 0 10px;
+`;
+
+const ListItem = styled.li`
+    display: flex;
+    margin: 0 0 1.5rem;
 `;
 
 const Text = styled.span`
@@ -21,6 +31,18 @@ const Text = styled.span`
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         font-size: 1rem;
+    }
+`;
+
+const Image = styled.div`
+    position: relative;
+    height: 120px;
+    min-width: 80px;
+    margin-right: 20px;
+
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
+        height: 100px;
+        margin-right: 10px;
     }
 `;
 
@@ -32,7 +54,7 @@ const PostTitle = styled(Link)`
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         margin: 1.2rem 0 4px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 `;
 
@@ -61,23 +83,35 @@ const AllPostsPage: NextPage<Props> = (props) => (
     <Container>
         <Head title="Maria Solano's Blog" description="Sometimes I say smart things." />
         <Text>Sometimes I say smart things.</Text>
-        <ul>
+        <List>
             {props.posts.map((post, i) => (
-                <li key={i}>
-                    <NextLink
-                        href={{ pathname: '/blog/[slug]', query: { slug: post.title } }}
-                        passHref
-                        legacyBehavior>
-                        <PostTitle>
-                            {post.title} - (<Text>{post.date}</Text>)
-                        </PostTitle>
-                    </NextLink>
-                    <i>
-                        <Text>{post.preview}</Text>
-                    </i>
-                </li>
+                <ListItem key={i}>
+                    <Image>
+                        <NextImage
+                            src={post.imgUrl}
+                            alt={post.title}
+                            fill
+                            style={{
+                                objectFit: 'cover'
+                            }}
+                        />
+                    </Image>
+                    <div>
+                        <NextLink
+                            href={{ pathname: '/blog/[slug]', query: { slug: post.title } }}
+                            passHref
+                            legacyBehavior>
+                            <PostTitle>
+                                {post.title} - (<Text>{post.date}</Text>)
+                            </PostTitle>
+                        </NextLink>
+                        <i>
+                            <Text>{post.preview}</Text>
+                        </i>
+                    </div>
+                </ListItem>
             ))}
-        </ul>
+        </List>
     </Container>
 );
 

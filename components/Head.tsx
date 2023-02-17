@@ -5,6 +5,7 @@ import NextHead from 'next/head';
 type Props = {
     title?: string;
     description?: string;
+    imgUrl?: string;
 };
 
 const Head: FC<Props> = (props) => (
@@ -14,6 +15,13 @@ const Head: FC<Props> = (props) => (
         <meta name="og:title" property="og:title" content={props.title} />
         <meta name="description" content={props.description} />
         <meta name="og:description" property={props.description} />
+        {props.imgUrl &&
+            (
+                <>
+                    <meta property="og:image" content={props.imgUrl} />
+                    <meta property="og:image:secure_url" content={props.imgUrl} />
+                </>
+            )}
         <meta property="og:site_name" content="Maria Solano" />
         <meta property="og:url" content={process.env.SITE_URL} />
     </NextHead>

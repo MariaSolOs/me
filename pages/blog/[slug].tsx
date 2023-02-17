@@ -42,7 +42,7 @@ const PostPage: NextPage<Props> = (props) => {
     const { meta, content } = props.post;
     return (
         <>
-            <Head title={meta.title} description={meta.preview} />
+            <Head title={meta.title} description={meta.preview} imgUrl={meta.imgUrl} />
             <Markdown options={{ wrapper: Container, forceWrapper: true }}>
                 {`# ${meta.title}\n####_${meta.date}_
                 ${content}`}
