@@ -11,19 +11,6 @@ const config = {
         styledComponents: true
     },
 
-    images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'cdn.pixabay.com'
-            },
-            {
-                protocol: 'https',
-                hostname: 'rustacean.net'
-            }
-        ]
-    },
-
     webpack(config) {
         // For importing my CV
         config.module.rules.push({

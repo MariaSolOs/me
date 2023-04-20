@@ -2,7 +2,6 @@
 title: 3 random thoughts
 date: '2023-01-15'
 preview: Some wisdom from a 23-year-old.
-imgUrl: 'https://cdn.pixabay.com/photo/2014/05/11/13/39/tawny-owl-341900_1280.jpg'
 ---
 
 A math prof once told me that there are 2 types of intelligent people in the world:

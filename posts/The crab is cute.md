@@ -2,7 +2,6 @@
 title: The crab is cute
 date: '2023-02-01'
 preview: Yeah, Rust is pretty cool.
-imgUrl: 'https://rustacean.net/more-crabby-things/squishable-ferris.jpg'
 ---
 
 Months ago I posted on [LinkedIn](https://www.linkedin.com/posts/mariasolano151822_no-matter-my-coding-experience-im-always-activity-6977411647090941952-QObY?utm_source=share&utm_medium=member_desktop) a picture of my first Rust `"Hello, World!"` program (because is there another way to begin your learning journey with a new language??). I had heard about how it was great for multi-threading stuff, its amazing time performance, and how it had a nice mascot (I mean, [Ferris](https://rustacean.net/) is pretty cute). That sounded like C on steroids, and I was curious to try it out. So I downloaded `rustc` and began my way through ["_the Book_"](https://doc.rust-lang.org/book/).
