@@ -18,8 +18,8 @@ We all love how you can download your favourite (and no more!) set of extensions
 
 That being said, VS also has amazing extensions. My favourite are those from [Mads](https://github.com/madskristensen) (100% recommend [this one](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ClearMEFComponentCache) for MEF errors.)
 
-## It's history
+## Its history
 
-When I first began working in Visual Studio extensibility, I wondered why it differed so much from the familiar TypeScript APIs from VS Code. Well, because Visual Studio is much older than TypeScript (it was used to _create_ TypeScript). The legacy code, the wonders of COM and MEF... it is all annoying and frustrating, but was there from the early days of many of the products that we all know and love.
+When I first began working in Visual Studio extensibility, I wondered why it differed so much from the familiar TypeScript APIs from VS Code. Well, because Visual Studio is much older than TypeScript (it was used to _create_ TypeScript). The legacy code, the wonders of COM and MEF... it is all annoying and frustrating, but VS has been there from the early days of many of the products that we all know and love.
 
 I now realize that this might seem like a super biased post coming from a Microsoftie that works in Visual Studio. But oh well, I already spent some time writing this and with the state of the economy words are too expensive to dispose of them like that. Besides, I'm not being paid to write this, and I'm sure that I haven't reached influencer status for this post to have an impact in the number of VS downloads. Just rambling about my IDE endeavours, which hopefully some of you might find worth reading.
