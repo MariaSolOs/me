@@ -11,7 +11,7 @@ A math prof once told me that there are 2 types of intelligent people in the wor
 
 If I'm smart (idk), I definitely belong to the second kind. I always had <s>good</s> excellent grades, but that was because I summarized entire textbooks and solved thousands of integrals instead of becoming a TikToker or something. I'm proud of my grades because they're not the result of me being a natural genius, I was just embarrasingly disciplined.
 
-But okay, all of this is to say that along the way I've learned a couple of stuff, which I'll share with you now because it's Sunday afternoon and I'm bored.
+But okay, all of this is to say that along the way I've learned a couple of things, which I'll share with you now because it's Sunday afternoon and I'm bored.
 
 ## Uno
 
