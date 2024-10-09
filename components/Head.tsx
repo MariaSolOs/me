@@ -21,7 +21,7 @@ const Head: FC<Props> = (props) => (
 
 Head.defaultProps = {
     title: 'Maria Solano',
-    description: 'SWE at Microsoft, McGill alumni, and voracious learner.'
+    description: 'SWE at Palantir, McGill alumni, and voracious learner.'
 };
 
 export default Head;

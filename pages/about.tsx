@@ -23,12 +23,8 @@ const AboutPage = () => (
     <Container>
         <Head />
         <Text>
-            I&apos;m a software engineer at Microsoft (building JavaScript and{' '}
-            <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
-                TypeScript
-            </Link>{' '}
-            tools for Visual Studio). In 2021 I completed my undergraduate degree in mathematics and computer science at
-            {' '}
+            I&apos;m a software engineer at Palantir (part of the front-end infrastructure team). 
+            In 2021 I completed my undergraduate degree in mathematics and computer science at{' '}
             <Link href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">
                 McGill University
             </Link>, where I didn&apos;t only learn about booleans and integrals but also flexed my debugging skills as
