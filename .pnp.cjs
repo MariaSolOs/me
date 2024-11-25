@@ -4023,7 +4023,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mlly", "npm:1.2.0"],\
             ["outdent", "npm:0.8.0"],\
-            ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.2.2"],\
+            ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.3.9"],\
             ["vite-node", "npm:0.28.5"]\
           ],\
           "linkType": "HARD"\
@@ -10493,6 +10493,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map-js", "npm:1.0.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:8.4.24", {\
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.24-07c10836e5-814e2126da.zip/node_modules/postcss/",\
+          "packageDependencies": [\
+            ["postcss", "npm:8.4.24"],\
+            ["nanoid", "npm:3.3.6"],\
+            ["picocolors", "npm:1.0.0"],\
+            ["source-map-js", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["postcss-discard-duplicates", [\
@@ -11321,10 +11331,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["rollup", [\
-        ["npm:3.20.6", {\
-          "packageLocation": "./.yarn/cache/rollup-npm-3.20.6-4e8cb9af5e-fa30f1e1d2.zip/node_modules/rollup/",\
+        ["npm:3.23.1", {\
+          "packageLocation": "./.yarn/cache/rollup-npm-3.23.1-f913623836-4b3b3bbfd4.zip/node_modules/rollup/",\
           "packageDependencies": [\
-            ["rollup", "npm:3.20.6"],\
+            ["rollup", "npm:3.23.1"],\
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"]\
           ],\
           "linkType": "HARD"\
@@ -12811,17 +12821,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["vite", [\
-        ["npm:4.2.2", {\
-          "packageLocation": "./.yarn/cache/vite-npm-4.2.2-a2dbb7e657-7fff9d046f.zip/node_modules/vite/",\
+        ["npm:4.3.9", {\
+          "packageLocation": "./.yarn/cache/vite-npm-4.3.9-24f3552941-8c45a51627.zip/node_modules/vite/",\
           "packageDependencies": [\
-            ["vite", "npm:4.2.2"]\
+            ["vite", "npm:4.3.9"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.2.2", {\
-          "packageLocation": "./.yarn/__virtual__/vite-virtual-84b0a174a4/0/cache/vite-npm-4.2.2-a2dbb7e657-7fff9d046f.zip/node_modules/vite/",\
+        ["virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.3.9", {\
+          "packageLocation": "./.yarn/__virtual__/vite-virtual-4e5eab439e/0/cache/vite-npm-4.3.9-24f3552941-8c45a51627.zip/node_modules/vite/",\
           "packageDependencies": [\
-            ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.2.2"],\
+            ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.3.9"],\
             ["@types/less", null],\
             ["@types/node", null],\
             ["@types/sass", null],\
@@ -12831,9 +12841,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild", "npm:0.17.17"],\
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
             ["less", null],\
-            ["postcss", "npm:8.4.23"],\
-            ["resolve", "patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"],\
-            ["rollup", "npm:3.20.6"],\
+            ["postcss", "npm:8.4.24"],\
+            ["rollup", "npm:3.23.1"],\
             ["sass", null],\
             ["stylus", null],\
             ["sugarss", null],\
@@ -12867,7 +12876,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picocolors", "npm:1.0.0"],\
             ["source-map", "npm:0.6.1"],\
             ["source-map-support", "npm:0.5.21"],\
-            ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.2.2"]\
+            ["vite", "virtual:ca524b9a64bde7c911e6a4a2eba817c1241cf6615a3aef9285c346cbef56056639c98f8b07e4c09eb083ae1589a4206c1bddf8dad6b8f99599e127ddc0df1a7a#npm:4.3.9"]\
           ],\
           "linkType": "HARD"\
         }]\
