@@ -1,3 +1,5 @@
 {{ define "main" }}
-    Single page
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p>{{ .PublishDate | time.Format ":date_long" }}</p>
 {{ end }}
