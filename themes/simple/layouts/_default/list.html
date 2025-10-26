@@ -1,7 +1,10 @@
 {{ define "main" }}
-    {{ range .Pages.ByPublishDate.Reverse }}
-        <h2>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-    {{ end }}
+    <ul>
+        {{ range .Pages.ByPublishDate.Reverse }}
+            <li>
+                <span>{{ .PublishDate | time.Format ":date_medium" }}</span>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
 {{ end }}
