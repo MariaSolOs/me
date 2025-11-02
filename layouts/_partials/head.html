@@ -16,21 +16,12 @@
 
     <title>{{ site.Title }}</title>
 
-    {{ with resources.Get "sass/styles.scss" }}
-        {{ $opts := dict
-            "enableSourceMap" hugo.IsDevelopment
-            "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
-            "targetPath" "css/styles.css"
-            "transpiler" "dartsass"
-            "vars" site.Params.styles
-        }}
-        {{ with . | toCSS $opts }}
-            {{ if hugo.IsDevelopment }}
-                <link rel="stylesheet" href="{{ .RelPermalink }}">
-            {{ else }}
-                {{ with . | fingerprint }}
-                    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-                {{ end }}
+    {{ with resources.Get "css/styles.css" }}
+        {{ if hugo.IsDevelopment }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ else }}
+            {{ with . | fingerprint }}
+                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
             {{ end }}
         {{ end }}
     {{ end }}
