@@ -18,3 +18,10 @@ ul.nav-list li a {
 }
 
 main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: $max-width;
+    padding: 0 20px;
+}
