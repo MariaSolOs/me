@@ -1,3 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Maria Solano'
+
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
