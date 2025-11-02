@@ -4,24 +4,35 @@ body {
     font-family: "Space Mono", monospace;
 }
 
-ul.nav-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 20px auto;
-    max-width: $max-width;
-}
-
-ul.nav-list li a {
+a {
     color: #A212FF;
-    font-weight: bold;
 }
 
 main {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: auto;
+    max-width: 1000px;
+}
+
+ul.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px auto 50px;
     max-width: $max-width;
-    padding: 0 20px;
+}
+
+ul.nav-list li a {
+    font-weight: bold;
+}
+
+ul.posts {
+    align-self: flex-start;
+}
+
+li span.post-date {
+    display: inline-block;
+    width: 140px;
 }
