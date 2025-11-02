@@ -10,11 +10,11 @@
 
     <title>{{ site.Title }}</title>
 
-    {{ with resources.Get "sass/main.scss" }}
+    {{ with resources.Get "sass/styles.scss" }}
         {{ $opts := dict
             "enableSourceMap" hugo.IsDevelopment
             "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
-            "targetPath" "css/main.css"
+            "targetPath" "css/styles.css"
             "transpiler" "dartsass"
             "vars" site.Params.styles
         }}
