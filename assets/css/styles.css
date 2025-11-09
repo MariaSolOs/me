@@ -1,11 +1,13 @@
 :root {
     --footer-height: 30px;
+    --grey: #808080;
     --nav-height: 50px;
+    --purple: #A212FF;
     --vertical-padding: 20px;
 }
 
 a {
-    color: #A212FF;
+    color: var(--purple);
 }
 
 body {
@@ -13,15 +15,25 @@ body {
     margin: 0;
 }
 
+code {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+}
+
+div.post-content {
+    text-align: justify;
+}
+
 footer {
     margin: auto;
-    color: #808080;
+    color: var(--grey);
     font-size: 0.8rem;
     line-height: var(--footer-height);
     width: fit-content;
 }
 
 li span.post-date {
+    color: var(--grey);
     display: inline-block;
     width: 140px;
 }
@@ -34,6 +46,11 @@ main {
     max-width: 1200px;
     min-height: calc(100vh - var(--nav-height) - var(--footer-height) - 5vh);
     padding: 0 var(--vertical-padding);
+}
+
+p.post-date {
+    color: var(--grey);
+    font-style: italic;
 }
 
 ul.nav-list {

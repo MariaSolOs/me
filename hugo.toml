@@ -5,3 +5,8 @@ title = 'Maria Solano'
 [caches]
     [caches.images]
         dir = ':cacheDir/images'
+
+[markup]
+    [markup.highlight]
+        lineNos = true
+        style = 'dracula'
