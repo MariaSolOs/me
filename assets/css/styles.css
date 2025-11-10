@@ -24,6 +24,10 @@ code {
     text-align: center;
 }
 
+div.highlight > div {
+    overflow-x: scroll;
+}
+
 div.post-content {
     text-align: justify;
 }
