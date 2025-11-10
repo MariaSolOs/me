@@ -50,7 +50,7 @@ div.social-icons svg {
     height: 26px;
     transition: ease-in-out 300ms;
     width: 26px;
-    margin: 0 8px;
+    margin: 0 12px;
 }
 
 div.social-icons svg:hover {
