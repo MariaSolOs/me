@@ -1,6 +1,5 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
+    <h1 class="centered">{{ .Title }}</h1>
     <div class="post-content">{{ .Content }}</div>
-    <br />
     <p class="post-date">{{ .PublishDate | time.Format ":date_long" }}</p>
 {{ end }}
