@@ -24,6 +24,12 @@
         {{- end -}}
     </title>
 
+    {{- if .IsHome -}}
+        <meta name="description" content="{{ site.Params.description }}" />
+    {{- else -}}
+        <meta name="description" content="{{ or .Params.Description site.Params.description }}" />
+    {{- end }}
+
     {{ with resources.Get "css/styles.css" }}
         {{ if hugo.IsDevelopment }}
             <link rel="stylesheet" href="{{ .RelPermalink }}">

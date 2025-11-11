@@ -10,3 +10,6 @@ title = 'Maria Solano'
     [markup.highlight]
         lineNos = true
         style = 'dracula'
+
+[params]
+    description = 'Personal website of Maria Solano'
