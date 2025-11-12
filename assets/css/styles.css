@@ -1,6 +1,7 @@
 :root {
     --footer-height: 30px;
     --grey: #808080;
+    --light-grey: #D3D3D3;
     --nav-height: 50px;
     --purple: #A212FF;
     --vertical-padding: 20px;
@@ -18,6 +19,10 @@ body {
 code {
     font-family: "Space Mono", monospace;
     font-weight: bold;
+}
+
+li > code, p > code {
+    background-color: var(--light-grey);
 }
 
 .centered {
