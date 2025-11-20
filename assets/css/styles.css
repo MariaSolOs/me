@@ -76,6 +76,12 @@ li span.post-date {
     width: 140px;
 }
 
+li span.post-description {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-left: 1rem;
+}
+
 main {
     margin: auto;
     max-width: 1200px;
