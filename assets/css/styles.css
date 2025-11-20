@@ -80,6 +80,10 @@ li span.post-description {
     font-size: 0.85rem;
     font-style: italic;
     margin-left: 1rem;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 
 main {
