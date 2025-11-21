@@ -1,6 +1,7 @@
 baseURL = 'https://mariasolos.com/'
 languageCode = 'en-us'
 title = 'Maria Solano'
+enableRobotsTXT = true
 
 [caches]
     [caches.images]
